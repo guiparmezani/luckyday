@@ -78,6 +78,7 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
  * Determine which pages should NOT display the sidebar
  */
 function display_sidebar() {
+  return false;
   static $display;
 
   isset($display) || $display = !in_array(true, [

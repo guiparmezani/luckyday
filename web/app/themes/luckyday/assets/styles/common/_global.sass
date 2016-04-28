@@ -4,17 +4,48 @@
 
 h1
 	font-family: $font-montserrat
+	font-weight: 700
 	font-size: 120px
 	color: #FFFFFF
 
+h2
+	font-family: $font-montserrat
+	font-weight: 300
+	font-size: 38px
+	color: $brand-black
+
 p
 	font-family: $font-roboto
-	font-size: 24px
-	color: #333
+	font-weight: 500
+	font-size: 20px
+	color: $brand-black
 
+span
+	&.red
+		color: red
+
+img
+	max-width: 100%
+
+hr.divider
+	max-width: 85px
+	border-top: 2px solid $brand-black
+	margin-left: 0
+	margin-top: 35px
+	margin-bottom: 35px
+
+.image-container
+	img
+		width: 100%
+
+.section-template
+	padding: 80px 0
+
+	@media (max-width: $screen-xs-max)
+		padding: 15px 0
+
+// Main Banner
 .main-banner
-	background: linear-gradient(-180deg, rgba(255,134,0, .78) 0%, rgba(255,228,64, .78) 100%), url(../images/main-banner.jpg) center center no-repeat
-	background-size: cover
 	position: relative
 	.banner-content-wrapper
 		height: 100%
@@ -26,8 +57,10 @@ p
 			transform: translateY(-50%)
 			p
 				color: #FFF
-				margin: 30px 0
-
+				font-size: 24px
+				margin: 50px 0
+			.btn-brand
+				margin: 0 15px
 	.down-angle
 		margin: 0 auto
 		display: table
@@ -39,3 +72,8 @@ p
 		min-height: 690px
 		.banner-content-wrapper
 			height: 690px
+
+// Presentation
+.presentation
+	.btn-brand
+		margin-top: 30px
