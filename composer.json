@@ -29,6 +29,14 @@
   "repositories": [
     {
       "type": "composer",
+      "url": "https://toran.dokku.fmaustin.com/repo/private"
+    },
+    {
+      "type": "composer",
+      "url": "https://toran.dokku.fmaustin.com/repo/packagist/"
+    },
+    {
+      "type": "composer",
       "url": "https://wpackagist.org"
     }
   ],
@@ -38,7 +46,8 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.5.1",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "acf/advanced-custom-fields-pro": ">=5.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

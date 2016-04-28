@@ -4,8 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "06c166a7e4f778743beb9228144cdf1e",
+    "hash": "ea29abf662ed5618051496c41ff0c1e2",
+    "content-hash": "f208848c2dd842082911c00b51fadbaa",
     "packages": [
+        {
+            "name": "acf/advanced-custom-fields-pro",
+            "version": "5.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/fahrenheit-marketing/advanced-custom-fields.git",
+                "reference": "31c61564ca706c479a21cf8bcceaceef30438c73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://toran.dokku.fmaustin.com/repo/private/dists/acf/advanced-custom-fields-pro/5.3.7.0/31c61564ca706c479a21cf8bcceaceef30438c73.zip",
+                "reference": "31c61564ca706c479a21cf8bcceaceef30438c73",
+                "shasum": null,
+                "mirrors": [
+                    {
+                        "url": "http://toran.dokku.fmaustin.com/repo/private/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Customise WordPress with powerful, professional and intuitive fields",
+            "homepage": "http://www.advancedcustomfields.com/pro/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2016-04-18 16:57:35"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
