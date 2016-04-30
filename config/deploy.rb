@@ -22,6 +22,7 @@ set :tmp_dir, "/home1/parmezan/capistrano_tmp"
 
 set :nvm_type, :system
 set :nvm_node_path, '/home1/parmezan/.nvm/versions/node/'
+set :nvm_path, '/home1/parmezan/.nvm/'    
 set :nvm_node, 'v5.0.0'
 set :nvm_map_bins, %w{node npm gulp bower}
 # set :nvm_custom_path, '/usr/local/nvm/versions/node'
