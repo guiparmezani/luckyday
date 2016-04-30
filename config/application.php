@@ -1,7 +1,7 @@
 <?php
 
 /** @var string Directory containing all of the site's files */
-$root_dir = dirname(__DIR__);
+$root_dir = dirname(__FILE__ . '/../');
 
 /** @var string Document Root */
 $webroot_dir = $root_dir . '/web';
@@ -26,7 +26,7 @@ if (file_exists($root_dir . '/.env')) {
  */
 define('WP_ENV', env('WP_ENV') ?: 'development');
 
-$env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
+$env_config = __FILE__ . '/../environments/' . WP_ENV . '.php';
 
 if (file_exists($env_config)) {
     require_once $env_config;
