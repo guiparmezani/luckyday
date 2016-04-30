@@ -11,7 +11,7 @@ set :branch, :master
 
 set :deploy_to, -> { "/home1/parmezan/deploy/#{fetch(:application)}" }
 
-set :log_level, :debug
+set :log_level, :info
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
