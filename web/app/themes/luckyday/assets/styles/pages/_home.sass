@@ -1,0 +1,48 @@
+// Presentation
+.presentation
+	.btn-brand
+		margin-top: 30px
+
+// Models
+.models
+	background-image: url(../images/blured-background.jpg)
+	background-size: 110% 112%
+	background-position: 0 -50px
+	overflow: hidden
+
+	@media(min-width: $screen-sm)
+		.rotated-image-wrapper
+			img
+				margin-left: -90px
+				margin-top: -100px
+
+// Secure Purchase
+.secure-purchase
+	span.big
+		font-size: 40px
+		font-family: $font-montserrat
+		line-height: 40px
+		position: relative
+		&:before, &:after
+			content: ''
+			width: 50px
+			height: 1px
+			background-color: $brand-black
+			position: absolute
+			left: -70px
+			top: 23px
+		&:after
+			right: -70px
+			left: auto
+
+	.block-wrapper
+		text-align: center
+		p
+			margin-top: 40px
+		img
+			height: 90px
+		.link-label
+			font-family: $font-montserrat
+			font-size: 30px
+			color: $brand-green
+			margin-top: 15px

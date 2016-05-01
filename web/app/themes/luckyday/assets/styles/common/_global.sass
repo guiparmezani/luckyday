@@ -15,6 +15,11 @@ h2
 	font-size: 38px
 	color: $brand-black
 
+h3
+	font-family: $font-montserrat
+	font-size: 34px
+	color: $brand-pink
+
 p
 	font-family: $font-roboto
 	font-weight: 500
@@ -35,9 +40,10 @@ img
 hr.divider
 	max-width: 85px
 	border-top: 2px solid $brand-black
-	margin-left: 0
 	margin-top: 35px
 	margin-bottom: 35px
+	&:not(.center)
+		margin-left: 0
 
 .block
 	display: block
@@ -63,6 +69,19 @@ hr.divider
 
 	@media (max-width: $screen-xs-max)
 		padding: 15px 0
+
+.page-header 
+	margin: 0
+	padding: 0
+	border: none
+	h1
+		margin-top: 5px
+		margin-bottom: 15px
+	.complementary-text
+		font-family: $font-indie
+		font-size: 36px
+		color: $brand-yellow
+		letter-spacing: 0px
 
 // Main Banner
 .main-banner
@@ -92,52 +111,3 @@ hr.divider
 		min-height: 690px
 		.banner-content-wrapper
 			height: 690px
-
-// Presentation
-.presentation
-	.btn-brand
-		margin-top: 30px
-
-// Models
-.models
-	background-image: url(../images/blured-background.jpg)
-	background-size: 110% 112%
-	background-position: 0 -50px
-	overflow: hidden
-
-	@media(min-width: $screen-sm)
-		.rotated-image-wrapper
-			img
-				margin-left: -90px
-				margin-top: -100px
-
-// Secure Purchase
-.secure-purchase
-	span.big
-		font-size: 40px
-		font-family: $font-montserrat
-		line-height: 40px
-		position: relative
-		&:before, &:after
-			content: ''
-			width: 50px
-			height: 1px
-			background-color: $brand-black
-			position: absolute
-			left: -70px
-			top: 23px
-		&:after
-			right: -70px
-			left: auto
-
-	.block-wrapper
-		text-align: center
-		p
-			margin-top: 40px
-		img
-			height: 90px
-		.link-label
-			font-family: $font-montserrat
-			font-size: 30px
-			color: $brand-green
-			margin-top: 15px

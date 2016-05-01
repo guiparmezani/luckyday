@@ -21,7 +21,7 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff"> -->
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,900|Montserrat:400,700|Lato:400,100,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,900|Montserrat:400,700|Lato:400,100,700,900|Indie+Flower' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <?php wp_head(); ?>
 </head>

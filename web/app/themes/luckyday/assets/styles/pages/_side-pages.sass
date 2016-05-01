@@ -1,0 +1,35 @@
+.intro-text
+	text-align: center
+	padding-bottom: 30px
+	.intro-text-content
+		max-width: 500px
+		margin: 0 auto
+		hr
+			margin-top: 55px
+
+.slider-section
+	.side-page-carousel
+		.carousel-indicators
+			li.active
+				background-color: $brand-pink
+		.item
+			background-size: cover
+			background-position: top center
+			min-height: 100px
+			h2
+				text-transform: uppercase
+				color: $brand-pink
+			hr.divider
+				border-top-color: $brand-pink
+			p
+				color: #FFF
+
+	@media (min-width: $screen-sm)
+		.side-page-carousel
+			.item
+				padding: 130px 0
+				min-height: 600px
+
+.featured-section
+	hr
+		border-top-color: $brand-pink
