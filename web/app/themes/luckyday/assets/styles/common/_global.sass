@@ -3,6 +3,10 @@
 	padding-right: 0
 	float: none
 
+body:not(.know-the-models)
+	.models-section
+		display: none
+
 h1
 	font-family: $font-montserrat
 	font-weight: 700
@@ -20,11 +24,20 @@ h3
 	font-size: 34px
 	color: $brand-pink
 
+h4
+	font-family: $font-montserrat
+	font-size: 26px
+	color: $brand-pink
+
 p
 	font-family: $font-roboto
 	font-weight: 500
 	font-size: 20px
 	color: $brand-black
+
+a
+	&:hover
+		text-decoration: none !important
 
 span
 	color: $brand-black

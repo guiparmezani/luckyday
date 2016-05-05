@@ -19,6 +19,15 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('.model-card-wrapper').click(function(e){
+          e.preventDefault();
+          var clickedElement = $(this);
+
+          $('.model-full-profile .model-image-src').attr('src', clickedElement.find('.model-image-src').text());
+          $('.model-full-profile .model-name').text(clickedElement.find('.model-name').text());
+          $('.model-full-profile .model-content').text(clickedElement.find('.model-content').text());
+
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

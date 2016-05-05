@@ -33,3 +33,50 @@
 .featured-section
 	hr
 		border-top-color: $brand-pink
+
+
+.models-section
+	.models-list
+		background-color: #eee
+		padding: 50px 0
+		.model-card-wrapper
+			.model-card
+				position: relative
+				padding: 15px
+				background-color: #FFF
+				.model-card-image-wrapper
+					height: 218px
+					overflow: hidden
+					img
+						max-width: none
+						width: 110%
+						height: auto
+				.model-content
+					margin-top: 20px
+					p
+						font-family: $font-montserrat
+				.model-card-rollover-block
+					@include transition(opacity .15s ease-in)
+					position: absolute
+					left: 0
+					top: 0
+					right: 0
+					bottom: 0
+					background-color: $brand-pink
+					opacity: 0
+					p
+						@include transition(all .2s ease-in-out)
+						color: #FFF
+						text-align: center
+						transform: translateY(-50%) translateX(-50%)
+						position: absolute
+						top: 55%
+						left: 50%
+			&:hover
+				.model-card-rollover-block
+					opacity: 1
+					p
+						top: 50%
+
+	.model-full-profile
+		background-color: #FFF
