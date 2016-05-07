@@ -46,6 +46,47 @@
 		<?php endif; ?>
 	</section>
 
+	<?php if(get_field('featured_section_title')): ?>
+		<section class="featured-section section-template">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="round-mask">
+							<?php echo wp_get_attachment_image(get_field('featured_section_image'), 'full'); ?>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<h3><?php the_field('featured_section_title'); ?></h3>
+						<hr class="divider">
+						<p><?php the_field('featured_section_text'); ?></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	<?php endif; ?>
+	
+	<?php if(have_rows('gallery_items')): ?>
+		<section class="photo-gallery">
+			<div class="container">
+				<div class="row">
+			    <?php while(have_rows('gallery_items')): the_row(); $photos = get_sub_field('gallery_photos'); ?>
+				    <div class="col-sm-4">
+				    	<div class="gallery-card" style="background-image: url(<?php echo $photos[0]['gallery_photo']; ?>)">
+				    		<?php while(have_rows('gallery_photos')): the_row(); ?>
+				    			<div class="hidden gallery-photo"><?php the_sub_field('gallery_photo'); ?></div>
+				    		<?php endwhile; ?>
+					      <div class="gallery-card-rollover-block">
+						      <h4 class="gallery-name"><?php the_sub_field('gallery_name'); ?></h4>
+						      <button type="button" class="btn btn-brand launch-modal-gallery" data-toggle="modal" data-target="#gallery-modal">Launch Gallery</button>
+					      </div>
+				    	</div>
+				    </div>
+			    <?php endwhile;  ?>
+				</div>
+			</div>
+		</section>
+	<?php endif; ?>
+
 	<!-- Models -->
 	<?php
 	  $models = new WP_Query([
@@ -102,23 +143,34 @@
 		</section>
 	<?php endif; ?>
 
-	<?php if(get_field('featured_section_title')): ?>
-		<section class="featured-section section-template">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="round-mask">
-							<?php echo wp_get_attachment_image(get_field('featured_section_image'), 'full'); ?>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<h3><?php the_field('featured_section_title'); ?></h3>
-						<hr class="divider">
-						<p><?php the_field('featured_section_text'); ?></p>
-					</div>
+
+<!-- Gallery Modal -->
+<div class="modal fade gallery-modal" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="gallery-modalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="gallery-modal-title" id="gallery-modalLabel"></h4>
+      </div>
+      <div class="gallery-modal-body">
+      	<div id="photo-gallery-carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#photo-gallery-carousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#photo-gallery-carousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
 				</div>
-			</div>
-		</section>
-	<?php endif; ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php endwhile; ?>

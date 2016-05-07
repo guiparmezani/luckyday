@@ -28,6 +28,32 @@
           $('.model-full-profile .model-content').text(clickedElement.find('.model-content').text());
 
         });
+
+        $('.model-card-wrapper').click(function(){
+          $(window).scrollTo('.model-full-profile', 500);
+        });
+
+        $('.main-banner .down-angle').click(function(){
+          $(window).scrollTo('.presentation', 500);
+        });
+
+        $('.launch-modal-gallery').click(function(){
+          var clickedElement = $(this).closest('.gallery-card');
+          var i = 0;
+
+          $('.gallery-modal .carousel-inner').html('');
+          $('.gallery-modal .modal-header h4').text(clickedElement.find('.gallery-name').text());
+
+          clickedElement.find('.gallery-photo').each(function(){
+            if (i===0) {
+              $('.gallery-modal .carousel-inner').append('<div class="item active"><img src="' + $(this).text() + '" alt="' + $(this).text() + '"></div>');
+            } else {
+              $('.gallery-modal .carousel-inner').append('<div class="item"><img src="' + $(this).text() + '" alt="' + $(this).text() + '"></div>');
+            }
+            i++;
+          });
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
