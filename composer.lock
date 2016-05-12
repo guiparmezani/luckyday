@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "944affbd59e3289dd10315dcf324457c",
-    "content-hash": "2e12971b60f03402e5709f31d5c63d53",
+    "hash": "6123d4271137d7ea00cc1da7301d50e2",
+    "content-hash": "3b280cd988f35ef04000173e0cdfaf5d",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -329,6 +329,26 @@
                 "environment"
             ],
             "time": "2016-04-15 10:48:49"
+        },
+        {
+            "name": "wpackagist-plugin/stripe",
+            "version": "1.5.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/stripe/",
+                "reference": "tags/1.5.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/stripe.1.5.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/stripe/"
         }
     ],
     "packages-dev": [
