@@ -14,7 +14,7 @@
 				<p><?php the_content(); ?></p>
 				<div class="buttons">
 					<a href="/try-the-demo" class="btn btn-brand white">Try The Demo</a>
-					<a href="/buy-it-now" class="btn btn-brand white">Buy It Now!</a>
+					<a href="/buy-it" class="btn btn-brand white">Buy It Now!</a>
 				</div>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="block-wrapper">
-					<a href="/buy-it-now">
+					<a href="/buy-it">
 						<img src="<?php echo bloginfo('template_url') . '/assets/images/coin-icon.svg'; ?>">
 						<span class="block link-label">US$<?php the_field('game_price', 'options'); ?></span>
 						<p><?php the_field('price_text'); ?></p>
@@ -70,7 +70,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="block-wrapper">
-					<a href="/buy-it-now">
+					<a href="/buy-it">
 						<img src="<?php echo bloginfo('template_url') . '/assets/images/lock-icon.svg'; ?>">
 						<span class="block link-label">Secured Payments</span>
 						<p><?php the_field('secure_payments_text'); ?></p>
@@ -79,7 +79,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="block-wrapper">
-					<a href="/buy-it-now">
+					<a href="/buy-it">
 						<img src="<?php echo bloginfo('template_url') . '/assets/images/controller-icon.svg'; ?>">
 						<span class="block link-label">US$<?php the_field('game_price', 'options'); ?></span>
 						<p><?php the_field('free_demo_text'); ?></p>

@@ -87,6 +87,33 @@
 		</section>
 	<?php endif; ?>
 
+	<?php if(get_field('show_purchase_forms')): ?>
+		<section class="buy-it-section section-template">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="stripe-section">
+							<div class="image-wrapper">
+								<img src="<?php echo bloginfo('template_url') . '/assets/images/stripe-logo.png'; ?>">
+							</div>
+							<p class="gray">Pay using a Credit Card through Stripe.</p>
+							<?php echo do_shortcode( '[stripe name="Lucky Day" description="Game" amount="' . str_replace('.', '', get_field('game_price', 'options')) . '"]' ); ?>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="paypal-section">
+							<div class="image-wrapper">
+								<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
+							</div>
+							<p class="gray">Pay using your PayPal account.</p>
+							<?php echo do_shortcode( '[wp_paypal_payment_box email="info@luckydaygame.com" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . get_bloginfo('url') . '/buy-it?payment_complete=true"]' ); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<?php endif; ?>
+
 	<!-- Models -->
 	<?php
 	  $models = new WP_Query([
