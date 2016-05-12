@@ -143,17 +143,23 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.1",
+            "version": "4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "494c0f663ff292334947097192392663b596a49e"
+                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/494c0f663ff292334947097192392663b596a49e",
-                "reference": "494c0f663ff292334947097192392663b596a49e",
-                "shasum": ""
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e992d00a34ea84d55c80023d27d5bcb839069add",
+                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://toran.dokku.fmaustin.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "johnpbloch/wordpress-core-installer": "~0.2",
@@ -176,7 +182,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-04-26 18:01:25"
+            "time": "2016-05-06 18:16:20"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -228,17 +234,23 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "8836fc53726466fea17137c2f2622d89de51cd67"
+                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/8836fc53726466fea17137c2f2622d89de51cd67",
-                "reference": "8836fc53726466fea17137c2f2622d89de51cd67",
-                "shasum": ""
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://toran.dokku.fmaustin.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.2"
@@ -266,7 +278,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2015-12-31 12:34:29"
+            "time": "2016-05-08 17:14:32"
         },
         {
             "name": "vlucas/phpdotenv",
