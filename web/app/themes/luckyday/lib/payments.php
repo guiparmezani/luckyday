@@ -7,12 +7,12 @@ function sc_payment_details_example_1( $html, $charge_response ) {
 	$html .= '<p>' . __( 'Congratulations. Your payment went through!', 'stripe' ) . '</p>' . "\n";
 	$html .= '<p>' . "\n";
 	if ( ! empty( $charge_response->description ) ) {
-		$html .= __( "Here's what you purchased:", 'stripe' ) . '<br/>' . "\n";
-		$html .= $charge_response->description . '<br/>' . "\n";
+		$html .= __( "The game should be downloaded automatically", 'stripe' ) . '<br/>' . "\n";
+		// $html .= $charge_response->description . '<br/>' . "\n";
 	}
-	if ( isset( $_GET['store_name'] ) && ! empty( $_GET['store_name'] ) ) {
-		$html .= 'From: ' . stripslashes( stripslashes( esc_html( $_GET['store_name'] ) ) ) . '<br/>' . "\n";
-	}
+	// if ( isset( $_GET['store_name'] ) && ! empty( $_GET['store_name'] ) ) {
+	// 	$html .= 'From: ' . stripslashes( stripslashes( esc_html( $_GET['store_name'] ) ) ) . '<br/>' . "\n";
+	// }
 	$html .= '<br/>' . "\n";
 	$html .= '<strong>' . __( 'Total Paid: ', 'stripe' ) . Stripe_Checkout_Misc::to_formatted_amount( $charge_response->amount, $charge_response->currency ) . ' ' . strtoupper( $charge_response->currency ) . '</strong>' . "\n";
 	$html .= '</p>' . "\n";
@@ -24,3 +24,4 @@ function sc_payment_details_example_1( $html, $charge_response ) {
 	$html .= '</div>' . "\n";
 	return $html;
 }
+

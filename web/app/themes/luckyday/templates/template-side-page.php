@@ -4,6 +4,10 @@
 */
 ?>
 
+<?php if(isset($_GET['charge']) || isset($_GET['payment_complete'])): ?>
+		<iframe width="1" height="1" frameborder="0" src="<?php the_field('game_file', 'options'); ?>"></iframe>
+<?php endif; ?>
+
 <?php while(have_posts()): the_post(); ?>
 	
 	<?php get_template_part('templates/page-header'); ?>
@@ -106,7 +110,7 @@
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
 							</div>
 							<p class="gray">Pay using your PayPal account.</p>
-							<?php echo do_shortcode( '[wp_paypal_payment_box email="info@luckydaygame.com" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . get_bloginfo('url') . '/buy-it?payment_complete=true"]' ); ?>
+							<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?payment_complete=true"]' ); ?>
 						</div>
 					</div>
 				</div>
