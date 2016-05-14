@@ -4,8 +4,12 @@
 */
 ?>
 
-<?php if(isset($_GET['charge']) || isset($_GET['payment_complete'])): ?>
-		<iframe width="1" height="1" frameborder="0" src="<?php the_field('game_file', 'options'); ?>"></iframe>
+<?php if(isset($_GET['purchased'])): ?>
+	<?php while(have_rows('games', 'options')): the_row(); ?>
+		<?php if (sanitize_title($_GET['purchased']) === sanitize_title(get_sub_field('game_name'))): ?>
+			<iframe width="1" height="1" frameborder="0" src="<?php the_sub_field('game_file'); ?>"></iframe>
+		<?php endif; ?>
+	<?php endwhile; ?>
 <?php endif; ?>
 
 <?php while(have_posts()): the_post(); ?>
@@ -91,8 +95,43 @@
 		</section>
 	<?php endif; ?>
 
+	<?php if(have_rows('games', 'options') && get_field('show_purchase_forms')): ?>
+		<section class="games-section clearfix">
+			<div class="generic-items-list">
+				<div class="container">
+					<div class="row">
+				    <?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
+					    <div class="col-sm-4">
+					    	<a href="<?php if (get_sub_field('game_price')){echo '#buy-it-section';} else {echo '#donate-section';} ?>" class="generic-card-wrapper">
+						    	<div class="generic-card" id="game-<?php echo $i; ?>">
+						    		<div class="generic-card-image-wrapper">
+							      	<?php echo wp_get_attachment_image(get_sub_field('game_image'), 'medium'); ?>
+						    		</div>
+							      <div class="generic-content">
+								      <h4 class="generic-name"><?php the_sub_field('game_name'); ?></h4>
+								      <hr class="divider center">
+								      <p class="generic-excerpt"><?php the_sub_field('game_description'); ?></p>
+								      <div class="game-price hidden"><?php the_sub_field('game_price') ?></div>
+							      </div>
+							      <div class="generic-card-rollover-block">
+							      	<?php if (get_sub_field('game_price')): ?>
+							      		<p>$<?php the_sub_field('game_price') ?><br>Buy it</p>
+							      	<?php else: ?>
+							      		<p>Donate/Help fund the project</p>
+							      	<?php endif ?>
+							      </div>
+						    	</div>
+					    	</a>
+					    </div>
+				    <?php $i++; endwhile;  ?>
+					</div>
+				</div>
+			</div>
+		</section>
+	<?php endif; ?>
+
 	<?php if(get_field('show_purchase_forms')): ?>
-		<section class="buy-it-section section-template">
+		<section class="buy-it-section section-template generic-full-profile" id="buy-it-section" style="display: none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -101,7 +140,11 @@
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/stripe-logo.png'; ?>">
 							</div>
 							<p class="gray">Pay using a Credit Card through Stripe.</p>
-							<?php echo do_shortcode( '[stripe name="Lucky Day" description="Game" amount="' . str_replace('.', '', get_field('game_price', 'options')) . '"]' ); ?>
+							<?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
+								<div class="stripe-games game-<?php echo $i; ?>">
+									<?php echo do_shortcode( '[stripe name="Lucky Day" description="' . get_sub_field('game_name') . '" amount="' . str_replace('.', '', get_sub_field('game_price')) . '" success_redirect_url="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+								</div>
+							<?php $i++; endwhile; ?>
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -110,8 +153,28 @@
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
 							</div>
 							<p class="gray">Pay using your PayPal account.</p>
-							<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?payment_complete=true"]' ); ?>
+							<?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
+								<div class="paypal-games game-<?php echo $i; ?>">
+									<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+								</div>
+							<?php $i++; endwhile; ?>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="donate-section section-template generic-full-profile" id="donate-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="image-wrapper">
+							<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
+						</div>
+						<p>This game is under development and will be released soon. You can help funding the development by donating through paypal using the button below.</p>
+						<hr class="divider center">
+						<p class="gray">Enter the amount you would like to donate:</p>
+						<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" other_amount=true button_text="Donate" return="' . untrailingslashit(get_bloginfo("url")) . '/buy-it?donation=true"]' ); ?>
 					</div>
 				</div>
 			</div>
@@ -130,24 +193,24 @@
 
 	<?php if($models->have_posts()): ?>
 		<section class="models-section clearfix">
-			<div class="models-list">
+			<div class="generic-items-list">
 				<div class="container">
 					<div class="row">
 				    <?php $models->rewind_posts(); $i=0; while ($models->have_posts()): $models->the_post(); $fields = get_fields($post->ID); ?>
 					    <div class="col-sm-4">
-					    	<a href="" class="model-card-wrapper">
-						    	<div class="model-card">
-						    		<div class="model-card-image-wrapper">
+					    	<a href="" class="generic-card-wrapper">
+						    	<div class="generic-card">
+						    		<div class="generic-card-image-wrapper">
 							      	<?php the_post_thumbnail(); ?>
-							      	<div class="model-image-src hidden"><?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?></div>
+							      	<div class="generic-image-src hidden"><?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?></div>
 						    		</div>
-							      <div class="model-content">
-								      <h4 class="model-name"><?php echo $post->post_title; ?></h4>
+							      <div class="generic-content">
+								      <h4 class="generic-name"><?php echo $post->post_title; ?></h4>
 								      <hr class="divider center">
-								      <p class="model-excerpt"><?php the_excerpt(); ?></p>
-								      <p class="model-content hidden"><?php echo $post->post_content; ?></p>
+								      <p class="generic-excerpt"><?php the_excerpt(); ?></p>
+								      <p class="generic-content hidden"><?php echo $post->post_content; ?></p>
 							      </div>
-							      <div class="model-card-rollover-block">
+							      <div class="generic-card-rollover-block">
 							      	<p>View full profile</p>
 							      </div>
 						    	</div>
@@ -157,16 +220,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="model-full-profile section-template">
+			<div class="generic-full-profile section-template">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6">
-							<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" class="model-image-src">
+							<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" class="generic-image-src">
 						</div>
 						<div class="col-sm-6">
-							<h3 class="model-name"><?php echo $post->post_title; ?></h3>
+							<h3 class="generic-name"><?php echo $post->post_title; ?></h3>
 				      <hr class="divider">
-				      <p class="model-content"><?php echo $post->post_content; ?></p>
+				      <p class="generic-content"><?php echo $post->post_content; ?></p>
 						</div>
 					</div>
 				</div>

@@ -19,18 +19,46 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        $('.model-card-wrapper').click(function(e){
+        $('.wp_pp_button_other_amt_section').html($('.wp_pp_button_other_amt_section input'));
+
+        $('.generic-card-wrapper').click(function(e){
           e.preventDefault();
           var clickedElement = $(this);
 
-          $('.model-full-profile .model-image-src').attr('src', clickedElement.find('.model-image-src').text());
-          $('.model-full-profile .model-name').text(clickedElement.find('.model-name').text());
-          $('.model-full-profile .model-content').text(clickedElement.find('.model-content').text());
+          $('.generic-full-profile .generic-image-src').attr('src', clickedElement.find('.generic-image-src').text());
+          $('.generic-full-profile .generic-name').text(clickedElement.find('.generic-name').text());
+          $('.generic-full-profile .generic-content').text(clickedElement.find('.generic-content').text());
 
-        });
+          $('.buy-it-section .stripe-games').each(function(){
+            if ($(this).hasClass(clickedElement.find('.generic-card').attr('id'))) {
+              $(this).show();
+            } else {
+              $(this).hide();
+            }
+          });
 
-        $('.model-card-wrapper').click(function(){
-          $(window).scrollTo('.model-full-profile', 500);
+          $('.buy-it-section .paypal-games').each(function(){
+            if ($(this).hasClass(clickedElement.find('.generic-card').attr('id'))) {
+              $(this).show();
+            } else {
+              $(this).hide();
+            }
+          });
+
+          if($(this).attr('href') === '#buy-it-section') {
+            $('#donate-section').hide();
+            $('#buy-it-section').show();
+            $(window).scrollTo('#buy-it-section', 500);
+            return;
+          } if($(this).attr('href') === '#donate-section') {
+            $('#donate-section').show();
+            $('#buy-it-section').hide();
+            $(window).scrollTo('#donate-section', 500);
+            return;
+          }
+
+          $(window).scrollTo('.generic-full-profile', 500);
+
         });
 
         $('.main-banner .down-angle').click(function(){
