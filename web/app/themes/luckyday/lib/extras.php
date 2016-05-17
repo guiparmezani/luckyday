@@ -78,10 +78,3 @@ add_action('init', function() {
   register_post_type('model', $args);
 });
 
-add_shortcode( 'try_out',  __NAMESPACE__ . '\\try_out_shortcode' );
-function try_out_shortcode( $attr ) {
-    ob_start();
-    // get_template_part( 'templates/try-out' );
-    echo 'macaco';
-    return ob_get_clean();
-}
