@@ -5,8 +5,14 @@
   </settings>
   <assets>
     <imagepack name="background">
-      <image src="assets/images/lib1.JPG" name="lib1" />
+      <image src="assets/images/lib1.JPG" name="lib" />
     </imagepack>
+
+    <imagepack name="library" x="0" y="0" z="20">
+            <image src="assets/images/lib1.JPG" name="library" />
+    </imagepack>
+
+
     <character name="you" textbox="tb_main">
       <displayname>You</displayname>
     </character>
@@ -15,6 +21,9 @@
     </character>
     <character name="b" textbox="tb_main">
       <displayname>Nikki</displayname>
+    </character>
+    <character name="t" textbox="tb_main">
+      <displayname>Narrator</displayname>
     </character>
     <character name="c" textbox="tb_main">
       <displayname>Claire</displayname>
@@ -26,7 +35,11 @@
       <nameTemplate>{name}</nameTemplate>
     </textbox>
   </assets>
+
   <scenes>
+    <line s="t">
+     This small demo contains 3 scenes from the game, adapted and out of context to give a little glimpse of the full game."
+    </line>
     <scene id="start">
       <choice>
         <option label="Play the Library scene." scene="lib"></option>
@@ -35,19 +48,22 @@
       </choice>
       <scene id="lib">
         <show asset="background" image="lib1" />
-        <show asset="lib1" />
+        <show asset="lib"/>
+        <show image="lib"/>
         <show asset="tb_main" />
-        <line>
+        <line s="t">
                     The library is very quiet.
-                </line>
-        <show asset="lib2" />
+        </line>
+        <set asset="library" image="library" duration="0" />
+            <show asset="library" />
+
         <line s="you">
                     Let's grab our book.
                 </line>
         <show asset="lib3" />
         <line s="s">
                     "I can't reach it. Can you help me?"
-                </line>
+        </line>
         <choice x="5px" y="355px">
           <option label="Ask her to lift you." scene="lift"></option>
           <option label="Lift Her." scene="lifther"></option>
@@ -56,21 +72,21 @@
           <show asset="lib4" />
           <line s="s">
                      Has anyone ever taught you how to be a gentleman?
-                  </line>
+          </line>
           <show asset="lib5" />
-          <line>
+          <line s="t">
                     "She tries to lift you."
-                  </line>
+          </line>
           <show asset="lib6" />
-          <line>
+          <line s="t">
                     You're too heavy and enp up falling over her.
-                  </line>
+          </line>
           <line s="s">
                     See? I knew this would happen!
                   </line>
           <line s="you">
                     Sorry. At least I got the book.
-                  </line>
+          </line>
           <goto scene="studyinglib" />
         </scene>
       </scene>
@@ -82,29 +98,29 @@
         </choice>
         <scene id="peek">
           <show asset="lib7" />
-          <line>
+          <line s="t">
                     You peek under her skirt.
-                  </line>
-          <line>
+          </line>
+          <line s="t">
                     Sarah realizes you're looking under her skirt and gets mad at you.
-                  </line>
+          </line>
           <line s="s">
                     Perv!
-                  </line>
+          </line>
           <goto scene="studyinglib" />
         </scene>
         <scene id="studyinglib">
           <show asset="lib12" />
           <line s="s">
                    Now that we've got our book, let's sit somewhere quiet to study.
-                 </line>
+          </line>
           <show asset="lib36" />
-          <line>
+          <line s="t">
                    You and Sarah are studying when Claire approaches.
-                 </line>
+          </line>
           <line s="c">
                    Hey, I didn't know you guys were studying here as well.
-                 </line>
+          </line>
           <choice>
             <option label="-Excuse us Claire, we're busy now." scene="excuseclaire"></option>
             <option label="-Why don't you join us Claire?" scene="joinclaire"></option>
@@ -113,11 +129,11 @@
             <show asset="lib39" />
             <line s="c">
                     Oh, sorry to bother the couple. I'll be leaving then.
-                   </line>
+            </line>
             <show asset="lib13" />
-            <line>
+            <line s="t">
                      You go back to teaching Sarah about the subject.
-                   </line>
+            </line>
             <choice>
               <option label="Compliment her efforts." scene="compliment"></option>
               <option label="Touch her hand." scene="touchhand"></option>
@@ -126,7 +142,7 @@
               <show asset="lib14" />
               <line s="s">
                      Thanks. That's because you're so good at teaching me!
-                    </line>
+              </line>
               <choice>
                 <option label="-I can teach you much more!" scene="sexlib"></option>
                 <option label="-Why don't we go somewhere else?" scene="sexlib"></option>
@@ -136,15 +152,15 @@
                 <show asset="lib16" />
                 <line s="s">
                        Come with me. I have an idea.
-                     </line>
+                </line>
                 <show asset="lib17" />
-                <line>
+                <line s="t">
                        She takes you to a hidden place behind the shelves.
-                     </line>
+                </line>
                 <show asset="lib18" />
                 <line s="s">
                        I want you to fuck me, right here, right now.
-                     </line>
+                </line>
                 <choice>
                   <option label="-That's crazy! Someone might catch us." scene="coward"></option>
                   <option label="-You don't need to ask twice! Let's fuck!" scene="sexshelves"></option>
@@ -153,10 +169,10 @@
                   <show asset="lib4" />
                   <line s="s">
                         You're such a coward! Let's go somewhere else then.                        
-                      </line>
-                  <line>
+                  </line>
+                  <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                      </line>
+                  </line>
                   <restart />
                 </scene>
               </scene>
@@ -164,38 +180,38 @@
           </scene>
           <scene id="sexhelves">
             <show asset="lib23" />
-            <line>
+            <line s="t">
                          You start by making out with her and taking off her clothes.
-                      </line>
+            </line>
             <show asset="lib24" />
             <line s="s">
                        We're going to do something crazy.
-                      </line>
+            </line>
             <show asset="lib25" />
-            <line>
+            <line s="t">
                        You two get naked and start fucking in the library, despite of having people nearby.
-                      </line>
+            </line>
             <show asset="lib27" />
             <line s="s">
                        Wait, I think I heard someone coming!
-                      </line>
+            </line>
             <line s="you">
                          Grab books and cover yourself, quick!
-                      </line>
+            </line>
             <show asset="lib28" />
-            <line>
+            <line s="t">
                        You and Sarah are caught and expelled from the library.
-                      </line>
-            <line>
+            </line>
+            <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                      </line>
+            </line>
             <restart />
           </scene>
         </scene>
         <scene id="touchhand">
           <line s="s">
                       Be honest to me, you haven't brought me here to study, have you?
-                     </line>
+          </line>
           <choice>
             <option label="-Actually, no. You got me." scene="sexlib"></option>
             <option label="-Psst, pay attention to the subject!" scene="awesome"></option>
@@ -204,89 +220,89 @@
           <scene id="awesome">
             <line s="s">
                         Ohh... How boring...
-                      </line>
-            <line>
+            </line>
+            <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                      </line>
+            </line>
             <restart />
           </scene>
         </scene>
         <scene id="joinclaire">
           <show asset="lib37" />
-          <line>
+          <line s="t">
                     Claire sits by Sarah's side. Sarah is not very fond about it.
-                   </line>
+          </line>
           <line s="you">
                      Well, Sarah, let's continue...
-                   </line>
+          </line>
           <show asset="lib38" />
-          <line>
+          <line s="t">
                      Claire drops her pen under the table.
-                   </line>
+          </line>
           <line s="c">
                      Ops, I'll grab it.
-                   </line>
+          </line>
           <choice>
             <option label="Grab the pen for her." scene="grabpen"></option>
             <option label="Let her grab the pen." scene="letgrab"></option>
           </choice>
           <scene id="grabpen">
             <show asset="lib30" />
-            <line>
+            <line s="t">
                        You go under the table. You can see under Sarah's skirt from there."
-                     </line>
+            </line>
             <choice>
               <option label="Grab the pen and return to your sit." scene="grabsit"></option>
               <option label="Caress Sarah's legs." scene="caress"></option>
               <option label="Touch her lady parts." scene="touch"></option>
             </choice>
             <scene id="grabsit">
-              <line>
+              <line s="t">
                          You grab the pen and return to your place.
-                       </line>
+              </line>
               <line s="c">
                          You're so nice, thank you. Why don't we go out later?
-                       </line>
-              <line>
+              </line>
+              <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                       </line>
+              </line>
               <restart />
             </scene>
           </scene>
           <scene id="caress">
             <show asset="lib31" />
-            <line>
+            <line s="t">
                          You tease her by touching her legs.
-                       </line>
+            </line>
             <show asset="lib33" />
-            <line>
+            <line s="t">
                          She takes off her underwear.
-                       </line>
+            </line>
             <show asset="lib34" />
-            <line>
+            <line s="t">
                         ...and spread her legs, revealing her pussy to you.
-                       </line>
-            <line>
+            </line>
+            <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                       </line>
+            </line>
             <restart />
           </scene>
         </scene>
         <scene id="touch">
           <show asset="lib32" />
-          <line>
+          <line s="t">
                         She kicks you in the nose, breaking it. You're taken to the hospital.
-                       </line>
-          <line>
+          </line>
+          <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                       </line>
+          </line>
           <restart />
         </scene>
         <scene id="letgrab">
           <show asset="lib40a" />
-          <line>
+          <line s="t">
                        She goes under the table and starts caressing your crotch.
-                     </line>
+          </line>
           <choice>
             <option label="Push her away." scene="pushher"></option>
             <option label="Don't mind her." scene="dontmind"></option>
@@ -294,52 +310,52 @@
           </choice>
           <scene id="pushher">
             <show asset="lib40b" />
-            <line>
+            <line s="t">
                          Claire returns to her sit.
-                      </line>
+            </line>
             <show asset="lib39" />
             <line s="c">
                         I think I might be bothering you, so if you excuse me... I'm leaving.
-                      </line>
+            </line>
             <show asset="lib13" />
             <line s="s">
                        What happened to her all of a sudden?
-                      </line>
+            </line>
             <line s="you">
                        No idea.
-                      </line>
-            <line>
+            </line>
+            <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                      </line>
+            </line>
             <restart />
           </scene>
         </scene>
         <scene id="dontmind">
           <show asset="lib40" />
-          <line>
+          <line s="t">
                        Claire unzips your pants and grabs your cock...
-                      </line>
+          </line>
           <show asset="lib40c" />
-          <line>
+          <line s="t">
                         She then starts to give you a blowjob.
-                      </line>
-          <line>
+          </line>
+          <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                      </line>
+          </line>
           <restart />
         </scene>
         <scene id="unzip">
           <show asset="lib40" />
-          <line>
+          <line s="t">
                        Surprised, Claire grabs your cock...
-                      </line>
+          </line>
           <show asset="lib40c" />
-          <line>
+          <line s="t">
                         She then starts to give you a blowjob.
-                      </line>
-          <line>
+          </line>
+          <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different scenes.
-                      </line>
+          </line>
           <restart />
         </scene>
       </scene>
