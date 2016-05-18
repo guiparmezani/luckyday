@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6123d4271137d7ea00cc1da7301d50e2",
-    "content-hash": "3b280cd988f35ef04000173e0cdfaf5d",
+    "hash": "ed4bed4be6c10c580ff032f28d8798f2",
+    "content-hash": "2c5e93b5e9a612a0d078cd999c8468ea",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -331,6 +331,26 @@
             "time": "2016-04-15 10:48:49"
         },
         {
+            "name": "wpackagist-plugin/polylang",
+            "version": "1.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
             "name": "wpackagist-plugin/stripe",
             "version": "1.5.0",
             "source": {
@@ -341,7 +361,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/stripe.1.5.0.zip",
-                "reference": null,
+                "reference": "tags/1.5.0",
                 "shasum": null
             },
             "require": {

@@ -47,7 +47,8 @@
     "johnpbloch/wordpress": "^4.4",
     "oscarotero/env": "^1.0",
     "acf/advanced-custom-fields-pro": ">=5.3",
-    "wpackagist-plugin/stripe": "^1.5"
+    "wpackagist-plugin/stripe": "^1.5",
+    "wpackagist-plugin/polylang": "^1.9"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
