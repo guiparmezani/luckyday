@@ -9,7 +9,42 @@
     </imagepack>
 
     <imagepack name="library" x="0" y="0" z="20">
+            <image src="assets/images/intro.jpg" name="intro" />
             <image src="assets/images/lib1.JPG" name="library" />
+            <image src="assets/images/lib2.JPG" name="libb" />
+            <image src="assets/images/lib3.jpg" name="libc" />
+            <image src="assets/images/lib4.jpg" name="libd" />
+            <image src="assets/images/lib5.JPG" name="libe" />
+            <image src="assets/images/lib6.JPG" name="libf" />
+            <image src="assets/images/lib19.JPG" name="libg" />
+            <image src="assets/images/lib7.jpg" name="libh" />
+            <image src="assets/images/lib10.jpg" name="libi" />
+            <image src="assets/images/lib12.jpg" name="libj" />
+            <image src="assets/images/lib36.JPG" name="libk" />
+            <image src="assets/images/lib39.JPG" name="libl" />
+            <image src="assets/images/lib13.JPG" name="libm" />
+            <image src="assets/images/lib14.JPG" name="libn" />
+            <image src="assets/images/lib16.JPG" name="libo" />
+            <image src="assets/images/lib17.JPG" name="libp" />
+            <image src="assets/images/lib18.jpg" name="libq" />
+            <image src="assets/images/lib23.jpg" name="libr" />
+            <image src="assets/images/lib24.jpg" name="libs" />
+            <image src="assets/images/lib25.jpg" name="libt" />
+            <image src="assets/images/lib27.jpg" name="libu" />
+            <image src="assets/images/lib28.jpg" name="libv" />
+            <image src="assets/images/lib35.JPG" name="libx" />
+            <image src="assets/images/lib37.JPG" name="libw" />
+            <image src="assets/images/lib38.JPG" name="liby" />
+            <image src="assets/images/lib30.JPG" name="libz" />
+            <image src="assets/images/lib31.JPG" name="libza" />
+            <image src="assets/images/lib32.JPG" name="libzb" />
+            <image src="assets/images/lib33.JPG" name="libzc" />
+            <image src="assets/images/lib34.JPG" name="libzd" />
+
+            <image src="assets/images/lib40a.JPG" name="libze" />
+            <image src="assets/images/lib40.JPG" name="libzf" />
+            <image src="assets/images/lib40b.JPG" name="libzg" />
+            <image src="assets/images/lib40c.JPG" name="libzh" />
     </imagepack>
 
 
@@ -37,8 +72,11 @@
   </assets>
 
   <scenes>
+    <show asset="intro"/>
+    <show image="intro"/>
+    <show asset="tb_main" />
     <line s="t">
-     This small demo contains 3 scenes from the game, adapted and out of context to give a little glimpse of the full game."
+     This short teaser contains 3 scenes from the game, adapted and out of context to give a little glimpse of the full experience."
     </line>
     <scene id="start">
       <choice>
@@ -47,20 +85,21 @@
         <option label="Play the Jail scene." scene="jail"></option>
       </choice>
       <scene id="lib">
-        <show asset="background" image="lib1" />
         <show asset="lib"/>
         <show image="lib"/>
         <show asset="tb_main" />
         <line s="t">
                     The library is very quiet.
         </line>
-        <set asset="library" image="library" duration="0" />
-            <show asset="library" />
-
+        <show asset="libb"/>
+        <show image="libb"/>
+        <show asset="tb_main" />
         <line s="you">
                     Let's grab our book.
                 </line>
-        <show asset="lib3" />
+        <show asset="libc"/>
+        <show image="libc"/>
+        <show asset="tb_main" />
         <line s="s">
                     "I can't reach it. Can you help me?"
         </line>
@@ -69,15 +108,21 @@
           <option label="Lift Her." scene="lifther"></option>
         </choice>
         <scene id="lift">
-          <show asset="lib4" />
+          <show asset="libd"/>
+          <show image="libd"/>
+          <show asset="tb_main" />
           <line s="s">
                      Has anyone ever taught you how to be a gentleman?
           </line>
-          <show asset="lib5" />
+          <show asset="libe"/>
+          <show image="libe"/>
+          <show asset="tb_main" />
           <line s="t">
                     "She tries to lift you."
           </line>
-          <show asset="lib6" />
+          <show asset="libf"/>
+          <show image="libf"/>
+          <show asset="tb_main" />
           <line s="t">
                     You're too heavy and enp up falling over her.
           </line>
@@ -91,16 +136,23 @@
         </scene>
       </scene>
       <scene id="lifther">
-        <show asset="lib19" />
+        <show asset="libg"/>
+        <show image="libg"/>
+        <show asset="tb_main" />
         <choice>
           <option label="Peek under her skirt." scene="peek"></option>
           <option label="Don't peek under her skirt." scene="studyinglib"></option>
         </choice>
         <scene id="peek">
-          <show asset="lib7" />
+          <show asset="libh"/>
+          <show image="libh"/>
+          <show asset="tb_main" />
           <line s="t">
                     You peek under her skirt.
           </line>
+          <show asset="libi"/>
+          <show image="libi"/>
+          <show asset="tb_main" />
           <line s="t">
                     Sarah realizes you're looking under her skirt and gets mad at you.
           </line>
@@ -110,11 +162,15 @@
           <goto scene="studyinglib" />
         </scene>
         <scene id="studyinglib">
-          <show asset="lib12" />
+          <show asset="libj"/>
+          <show image="libj"/>
+          <show asset="tb_main" />
           <line s="s">
                    Now that we've got our book, let's sit somewhere quiet to study.
           </line>
-          <show asset="lib36" />
+          <show asset="libk"/>
+          <show image="libk"/>
+          <show asset="tb_main" />
           <line s="t">
                    You and Sarah are studying when Claire approaches.
           </line>
@@ -126,11 +182,15 @@
             <option label="-Why don't you join us Claire?" scene="joinclaire"></option>
           </choice>
           <scene id="excuseclaire">
-            <show asset="lib39" />
+           <show asset="libl"/>
+           <show image="libl"/>
+           <show asset="tb_main" />
             <line s="c">
-                    Oh, sorry to bother the couple. I'll be leaving then.
+                    Oh, sorry to bother the couple. I'll just leave you guys alone.
             </line>
-            <show asset="lib13" />
+            <show asset="libm"/>
+            <show image="libm"/>
+            <show asset="tb_main" />
             <line s="t">
                      You go back to teaching Sarah about the subject.
             </line>
@@ -139,7 +199,9 @@
               <option label="Touch her hand." scene="touchhand"></option>
             </choice>
             <scene id="compliment">
-              <show asset="lib14" />
+              <show asset="libn"/>
+              <show image="libn"/>
+              <show asset="tb_main" />
               <line s="s">
                      Thanks. That's because you're so good at teaching me!
               </line>
@@ -149,15 +211,21 @@
                 <option label="-I'm awesome, I know it." scene="awesome"></option>
               </choice>
               <scene id="sexlib">
-                <show asset="lib16" />
+                <show asset="libo"/>
+                <show image="libo"/>
+                <show asset="tb_main" />
                 <line s="s">
                        Come with me. I have an idea.
                 </line>
-                <show asset="lib17" />
+                <show asset="libp"/>
+                <show image="libp"/>
+                <show asset="tb_main" />
                 <line s="t">
                        She takes you to a hidden place behind the shelves.
                 </line>
-                <show asset="lib18" />
+                <show asset="libq"/>
+                <show image="libq"/>
+                <show asset="tb_main" />
                 <line s="s">
                        I want you to fuck me, right here, right now.
                 </line>
@@ -166,12 +234,14 @@
                   <option label="-You don't need to ask twice! Let's fuck!" scene="sexshelves"></option>
                 </choice>
                 <scene id="coward">
-                  <show asset="lib4" />
+                  <show asset="libd"/>
+                  <show image="libd"/>
+                  <show asset="tb_main" />
                   <line s="s">
                         You're such a coward! Let's go somewhere else then.                        
                   </line>
                   <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                        The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
                   </line>
                   <restart />
                 </scene>
@@ -179,36 +249,49 @@
             </scene>
           </scene>
           <scene id="sexhelves">
-            <show asset="lib23" />
+            <show asset="libr"/>
+            <show image="libr"/>
+            <show asset="tb_main" />
             <line s="t">
                          You start by making out with her and taking off her clothes.
             </line>
-            <show asset="lib24" />
+            <show asset="libs"/>
+            <show image="libs"/>
+            <show asset="tb_main" />
             <line s="s">
                        We're going to do something crazy.
             </line>
-            <show asset="lib25" />
+            <show asset="libt"/>
+            <show image="libt"/>
+            <show asset="tb_main" />
             <line s="t">
                        You two get naked and start fucking in the library, despite of having people nearby.
             </line>
-            <show asset="lib27" />
+            <show asset="libu"/>
+            <show image="libu"/>
+            <show asset="tb_main" />
             <line s="s">
                        Wait, I think I heard someone coming!
             </line>
             <line s="you">
                          Grab books and cover yourself, quick!
             </line>
-            <show asset="lib28" />
+            <show asset="libv"/>
+            <show image="libv"/>
+            <show asset="tb_main" />
             <line s="t">
                        You and Sarah are caught and expelled from the library.
             </line>
             <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
             <restart />
           </scene>
         </scene>
         <scene id="touchhand">
+          <show asset="libx"/>
+          <show image="libx"/>
+          <show asset="tb_main" />
           <line s="s">
                       Be honest to me, you haven't brought me here to study, have you?
           </line>
@@ -218,24 +301,31 @@
             <option label="-Of course we're here to study! You have a test tomorrow!" scene="awesome"></option>
           </choice>
           <scene id="awesome">
+            <show asset="libm"/>
+            <show image="libm"/>
+            <show asset="tb_main" />
             <line s="s">
                         Ohh... How boring...
             </line>
             <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
             <restart />
           </scene>
         </scene>
         <scene id="joinclaire">
-          <show asset="lib37" />
+          <show asset="libw"/>
+          <show image="libw"/>
+          <show asset="tb_main" />
           <line s="t">
                     Claire sits by Sarah's side. Sarah is not very fond about it.
           </line>
           <line s="you">
                      Well, Sarah, let's continue...
           </line>
-          <show asset="lib38" />
+          <show asset="liby"/>
+          <show image="liby"/>
+          <show asset="tb_main" />
           <line s="t">
                      Claire drops her pen under the table.
           </line>
@@ -247,7 +337,9 @@
             <option label="Let her grab the pen." scene="letgrab"></option>
           </choice>
           <scene id="grabpen">
-            <show asset="lib30" />
+            <show asset="libz"/>
+            <show image="libz"/>
+            <show asset="tb_main" />
             <line s="t">
                        You go under the table. You can see under Sarah's skirt from there."
             </line>
@@ -257,6 +349,9 @@
               <option label="Touch her lady parts." scene="touch"></option>
             </choice>
             <scene id="grabsit">
+              <show asset="libw"/>
+              <show image="libw"/>
+              <show asset="tb_main" />
               <line s="t">
                          You grab the pen and return to your place.
               </line>
@@ -264,42 +359,52 @@
                          You're so nice, thank you. Why don't we go out later?
               </line>
               <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
               </line>
               <restart />
             </scene>
           </scene>
           <scene id="caress">
-            <show asset="lib31" />
+            <show asset="libza"/>
+            <show image="libza"/>
+            <show asset="tb_main" />
             <line s="t">
                          You tease her by touching her legs.
             </line>
-            <show asset="lib33" />
+            <show asset="libzc"/>
+            <show image="libzc"/>
+            <show asset="tb_main" />
             <line s="t">
-                         She takes off her underwear.
+                         She discreetly takes off her panties.
             </line>
-            <show asset="lib34" />
+            <show asset="libzd"/>
+            <show image="libzd"/>
+            <show asset="tb_main" />
             <line s="t">
                         ...and spread her legs, revealing her pussy to you.
             </line>
             <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
             <restart />
           </scene>
         </scene>
         <scene id="touch">
-          <show asset="lib32" />
+          <show asset="libzb"/>
+          <show image="libzb"/>
+          <show asset="tb_main" />
           <line s="t">
                         She kicks you in the nose, breaking it. You're taken to the hospital.
           </line>
           <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
           </line>
           <restart />
         </scene>
         <scene id="letgrab">
-          <show asset="lib40a" />
+          <show asset="libze"/>
+          <show image="libze"/>
+          <show asset="tb_main" />
           <line s="t">
                        She goes under the table and starts caressing your crotch.
           </line>
@@ -309,15 +414,21 @@
             <option label="Unzip your pants." scene="unzip"></option>
           </choice>
           <scene id="pushher">
-            <show asset="lib40b" />
+            <show asset="libzg"/>
+            <show image="libzg"/>
+            <show asset="tb_main" />
             <line s="t">
                          Claire returns to her sit.
             </line>
-            <show asset="lib39" />
+            <show asset="libl"/>
+            <show image="libl"/>
+            <show asset="tb_main" />
             <line s="c">
                         I think I might be bothering you, so if you excuse me... I'm leaving.
             </line>
-            <show asset="lib13" />
+            <show asset="libm"/>
+            <show image="libm"/>
+            <show asset="tb_main" />
             <line s="s">
                        What happened to her all of a sudden?
             </line>
@@ -325,36 +436,44 @@
                        No idea.
             </line>
             <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
             <restart />
           </scene>
         </scene>
         <scene id="dontmind">
-          <show asset="lib40" />
+          <show asset="libzf"/>
+          <show image="libzf"/>
+          <show asset="tb_main" />
           <line s="t">
                        Claire unzips your pants and grabs your cock...
           </line>
-          <show asset="lib40c" />
+          <show asset="libzh"/>
+          <show image="libzh"/>
+          <show asset="tb_main" />
           <line s="t">
-                        She then starts to give you a blowjob.
+                        She then starts to give you a blowjob under the table.
           </line>
           <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
           </line>
           <restart />
         </scene>
         <scene id="unzip">
-          <show asset="lib40" />
+          <show asset="libzf"/>
+          <show image="libzf"/>
+          <show asset="tb_main" />
           <line s="t">
                        Surprised, Claire grabs your cock...
           </line>
-          <show asset="lib40c" />
+          <show asset="libzh"/>
+          <show image="libzh"/>
+          <show asset="tb_main" />
           <line s="t">
-                        She then starts to give you a blowjob.
+                        She then starts to give you a blowjob under the table.
           </line>
           <line s="t">
-                        The demo ends here. Please purchase the full game, which contains over 75 different scenes.
+                  The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
           </line>
           <restart />
         </scene>
