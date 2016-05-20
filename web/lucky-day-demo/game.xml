@@ -4,9 +4,6 @@
     <stage width="960px" height="640px" create="yes" center="yes" />
   </settings>
   <assets>
-    <imagepack name="background">
-      <image src="assets/images/lib1.JPG" name="lib" />
-    </imagepack>
 
     <imagepack name="library" x="0" y="0" z="20">
             <image src="assets/images/intro.jpg" name="intro" />
@@ -40,7 +37,6 @@
             <image src="assets/images/lib32.JPG" name="libzb" />
             <image src="assets/images/lib33.JPG" name="libzc" />
             <image src="assets/images/lib34.JPG" name="libzd" />
-
             <image src="assets/images/lib40a.JPG" name="libze" />
             <image src="assets/images/lib40.JPG" name="libzf" />
             <image src="assets/images/lib40b.JPG" name="libzg" />
@@ -72,11 +68,13 @@
   </assets>
 
   <scenes>
-    <show asset="intro"/>
-    <show image="intro"/>
-    <show asset="tb_main" />
+
+    <set asset="library" image="intro" duration="0" />
+      <show asset="library" />
+
+
     <line s="t">
-     This short teaser contains 3 scenes from the game, adapted and out of context to give a little glimpse of the full experience."
+     This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience."
     </line>
     <scene id="start">
       <choice>
@@ -341,7 +339,7 @@
             <show image="libz"/>
             <show asset="tb_main" />
             <line s="t">
-                       You go under the table. You can see under Sarah's skirt from there."
+                       You go under the table. You can see Sarah's panties from there.
             </line>
             <choice>
               <option label="Grab the pen and return to your sit." scene="grabsit"></option>

@@ -20,7 +20,11 @@
 			<div class="game-block">
 				<iframe src="/lucky-day-demo"></iframe>
 				<br><br>
-				<a href="/buy-it" class="btn btn-brand">Buy it now</a>
+				<?php if (pll_current_language() === 'en'): ?>
+					<a href="/buy-it" class="btn btn-brand">But it Now</a>
+				<?php else: ?>
+					<a href="/compre-o-jogo" class="btn btn-brand">Compre Agora</a>
+				<?php endif ?>
 			</div>
 		</div>
 	</section>

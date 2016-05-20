@@ -82,6 +82,8 @@
           });
         });
 
+        $('.wp_pp_button_submit_btn input').addClass('stripe-button-el');
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -100,7 +102,6 @@
     'buy_it': {
       init: function() {
         // JavaScript to be fired on the buy it page
-        $('.wp_pp_button_submit_btn input').addClass('stripe-button-el');
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

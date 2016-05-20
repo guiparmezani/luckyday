@@ -85,7 +85,7 @@
 				    		<?php endwhile; ?>
 					      <div class="gallery-card-rollover-block">
 						      <h4 class="gallery-name"><?php the_sub_field('gallery_name'); ?></h4>
-						      <button type="button" class="btn btn-brand launch-modal-gallery" data-toggle="modal" data-target="#gallery-modal">Launch Gallery</button>
+						      <button type="button" class="btn btn-brand launch-modal-gallery" data-toggle="modal" data-target="#gallery-modal"><?php if(pll_current_language() === 'en') echo 'Launch Gallery'; else echo 'Abrir Galeria';?></button>
 					      </div>
 				    	</div>
 				    </div>
@@ -115,9 +115,9 @@
 							      </div>
 							      <div class="generic-card-rollover-block">
 							      	<?php if (get_sub_field('game_price')): ?>
-							      		<p>$<?php the_sub_field('game_price') ?><br>Buy it</p>
+							      		<p>$<?php the_sub_field('game_price') ?><br><?php if(pll_current_language() === 'en') echo 'Buy it'; else echo 'Compre agora';?></p>
 							      	<?php else: ?>
-							      		<p>Donate/Help fund the project</p>
+							      		<p><?php if(pll_current_language() === 'en') echo 'Donate/Help fund the project'; else echo 'Doe/ajude a fundar o projeto';?></p>
 							      	<?php endif ?>
 							      </div>
 						    	</div>
@@ -139,10 +139,14 @@
 							<div class="image-wrapper">
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/stripe-logo.png'; ?>">
 							</div>
-							<p class="gray">Pay using a Credit Card through Stripe.</p>
+							<p class="gray"><?php if(pll_current_language() === 'en') echo 'Pay using a Credit Card through Stripe.'; else echo 'Pague com um Cartão de Crédito através do Stripe.';?></p>
 							<?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
 								<div class="stripe-games game-<?php echo $i; ?>">
-									<?php echo do_shortcode( '[stripe name="Lucky Day" description="' . get_sub_field('game_name') . '" amount="' . str_replace('.', '', get_sub_field('game_price')) . '" success_redirect_url="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+									<?php if (pll_current_language() === 'en'): ?>
+										<?php echo do_shortcode( '[stripe name="Lucky Day" description="' . get_sub_field('game_name') . '" amount="' . str_replace('.', '', get_sub_field('game_price')) . '" success_redirect_url="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true" payment_button_label="Pay with Card"]' ); ?>
+									<?php else: ?>
+										<?php echo do_shortcode( '[stripe name="Lucky Day" description="' . get_sub_field('game_name') . '" amount="' . str_replace('.', '', get_sub_field('game_price')) . '" success_redirect_url="' . untrailingslashit(get_bloginfo('url')) . '/compre-o-jogo?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true" payment_button_label="Comprar"]' ); ?>
+									<?php endif; ?>
 								</div>
 							<?php $i++; endwhile; ?>
 						</div>
@@ -152,10 +156,14 @@
 							<div class="image-wrapper">
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
 							</div>
-							<p class="gray">Pay using your PayPal account.</p>
+							<p class="gray"><?php if(pll_current_language() === 'en') echo 'Pay using your PayPal account.'; else echo 'Pague usando sua conta do PayPal.';?></p>
 							<?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
 								<div class="paypal-games game-<?php echo $i; ?>">
-									<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+									<?php if (pll_current_language() === 'en'): ?>
+										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:0.01" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+									<?php else: ?>
+										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:0.01" button_text="Comprar" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/compre-o-jogo?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+									<?php endif; ?>
 								</div>
 							<?php $i++; endwhile; ?>
 						</div>
@@ -171,10 +179,14 @@
 						<div class="image-wrapper">
 							<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
 						</div>
-						<p>This game is under development and will be released soon. You can help funding the development by donating through paypal using the button below.</p>
+						<p><?php if(pll_current_language() === 'en') echo 'This game is under development and will be released soon. You can help funding the development by donating through paypal using the button below.'; else echo 'Esse jogo está sendo desenvolvido e será lançado em breve. Você pode ajudar com os custos de desenvolvimento doando através do Paypal usando o campo abaixo.';?></p>
 						<hr class="divider center">
-						<p class="gray">Enter the amount you would like to donate:</p>
-						<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" other_amount=true button_text="Donate" return="' . untrailingslashit(get_bloginfo("url")) . '/buy-it?donation=true"]' ); ?>
+						<p class="gray"><?php if(pll_current_language() === 'en') echo 'Enter the amount you would like to donate:'; else echo 'Entre com o valor que você deseja doar:';?></p>
+						<?php if (pll_current_language() === 'en'): ?>
+							<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" other_amount=true button_text="Donate" return="' . untrailingslashit(get_bloginfo("url")) . '/buy-it?donation=true"]' ); ?>
+						<?php else: ?>
+							<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" other_amount=true button_text="Doar" return="' . untrailingslashit(get_bloginfo("url")) . '/compre-o-jogo?donation=true"]' ); ?>
+						<?php endif ?>
 					</div>
 				</div>
 			</div>
@@ -184,7 +196,7 @@
 	<!-- Models -->
 	<?php
 	  $models = new WP_Query([
-	      'posts_per_page' => 10,
+	      'posts_per_page' => 50,
 	      'post_type' => 'model',
 	      'post_status' => 'publish',
 	    ]
@@ -211,7 +223,7 @@
 								      <p class="generic-content hidden"><?php echo $post->post_content; ?></p>
 							      </div>
 							      <div class="generic-card-rollover-block">
-							      	<p>View full profile</p>
+							      	<p><?php if(pll_current_language() === 'en') echo 'View Full profile'; else echo 'Ver Perfil completo';?></p>
 							      </div>
 						    	</div>
 					    	</a>
