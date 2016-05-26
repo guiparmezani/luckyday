@@ -9,7 +9,8 @@ set :repo_url, 'git@github.com:guiparmezani/luckyday.git'
 # This could be overridden in a stage config file
 set :branch, :master
 
-set :deploy_to, -> { "/home1/parmezan/deploy/#{fetch(:application)}" }
+# set :deploy_to, -> { "/home1/parmezan/deploy/#{fetch(:application)}" }
+set :deploy_to, -> { "/home5/luckyda4/deploy/#{fetch(:application)}" }
 
 set :log_level, :info
 
@@ -18,11 +19,14 @@ set :log_level, :info
 # set :linked_files, %w{.env web/.htaccess}
 set :linked_files, %w{.env web/.htaccess}
 set :linked_dirs, %w{web/app/uploads web/app/themes/luckyday/node_modules}
-set :tmp_dir, "/home1/parmezan/capistrano_tmp"
+# set :tmp_dir, "/home1/parmezan/capistrano_tmp"
+set :tmp_dir, "/home5/luckyda4/capistrano_tmp"
 
 set :nvm_type, :system
-set :nvm_node_path, '/home1/parmezan/.nvm/versions/node/'
-set :nvm_path, '/home1/parmezan/.nvm/'    
+# set :nvm_node_path, '/home1/parmezan/.nvm/versions/node/'
+set :nvm_node_path, '/home5/luckyda4/.nvm/versions/node/'
+# set :nvm_path, '/home1/parmezan/.nvm/'    
+set :nvm_path, '/home5/luckyda4/.nvm/'    
 set :nvm_node, 'v5.0.0'
 set :nvm_map_bins, %w{node npm gulp bower}
 # set :nvm_custom_path, '/usr/local/nvm/versions/node'
@@ -53,4 +57,5 @@ end
 # Uncomment the following line to run it on deploys if needed
 #after 'deploy:publishing', 'deploy:restart'
 SSHKit.config.command_map[:bash] = "/usr/bin/bash"
-SSHKit.config.command_map[:composer] = "/ramdisk/php/54/bin/php54-cli /home1/parmezan/bin/composer.phar"
+# SSHKit.config.command_map[:composer] = "/ramdisk/php/54/bin/php54-cli /home5/luckyda4/bin/composer.phar"
+SSHKit.config.command_map[:composer] = "/ramdisk/php/54/bin/php54-cli /home5/luckyda4/bin/composer.phar"
