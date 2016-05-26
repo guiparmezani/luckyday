@@ -5,42 +5,8 @@
   </settings>
   <assets>
 
-    <imagepack name="library" x="0" y="0" z="20">
-            <image src="assets/images/intro.jpg" name="intro" />
-            <image src="assets/images/lib1.JPG" name="library" />
-            <image src="assets/images/lib2.JPG" name="libb" />
-            <image src="assets/images/lib3.jpg" name="libc" />
-            <image src="assets/images/lib4.jpg" name="libd" />
-            <image src="assets/images/lib5.JPG" name="libe" />
-            <image src="assets/images/lib6.JPG" name="libf" />
-            <image src="assets/images/lib19.JPG" name="libg" />
-            <image src="assets/images/lib7.jpg" name="libh" />
-            <image src="assets/images/lib10.jpg" name="libi" />
-            <image src="assets/images/lib12.jpg" name="libj" />
-            <image src="assets/images/lib36.JPG" name="libk" />
-            <image src="assets/images/lib39.JPG" name="libl" />
-            <image src="assets/images/lib13.JPG" name="libm" />
-            <image src="assets/images/lib14.JPG" name="libn" />
-            <image src="assets/images/lib16.JPG" name="libo" />
-            <image src="assets/images/lib17.JPG" name="libp" />
-            <image src="assets/images/lib18.jpg" name="libq" />
-            <image src="assets/images/lib23.jpg" name="libr" />
-            <image src="assets/images/lib24.jpg" name="libs" />
-            <image src="assets/images/lib25.jpg" name="libt" />
-            <image src="assets/images/lib27.jpg" name="libu" />
-            <image src="assets/images/lib28.jpg" name="libv" />
-            <image src="assets/images/lib35.JPG" name="libx" />
-            <image src="assets/images/lib37.JPG" name="libw" />
-            <image src="assets/images/lib38.JPG" name="liby" />
-            <image src="assets/images/lib30.JPG" name="libz" />
-            <image src="assets/images/lib31.JPG" name="libza" />
-            <image src="assets/images/lib32.JPG" name="libzb" />
-            <image src="assets/images/lib33.JPG" name="libzc" />
-            <image src="assets/images/lib34.JPG" name="libzd" />
-            <image src="assets/images/lib40a.JPG" name="libze" />
-            <image src="assets/images/lib40.JPG" name="libzf" />
-            <image src="assets/images/lib40b.JPG" name="libzg" />
-            <image src="assets/images/lib40c.JPG" name="libzh" />
+    <imagepack name="library1" x="0" y="0" z="20">
+            <image src="assets/images/intro.JPG" name="library" />
     </imagepack>
 
 
@@ -68,11 +34,6 @@
   </assets>
 
   <scenes>
-
-    <set asset="library" image="intro" duration="0" />
-      <show asset="library" />
-
-
     <line s="t">
      This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience."
     </line>
@@ -83,12 +44,12 @@
         <option label="Play the Jail scene." scene="jail"></option>
       </choice>
       <scene id="lib">
-        <show asset="lib"/>
-        <show image="lib"/>
-        <show asset="tb_main" />
         <line s="t">
                     The library is very quiet.
         </line>
+        <set asset="library1" image="library" duration="0" />
+            <show asset="library1" />
+
         <show asset="libb"/>
         <show image="libb"/>
         <show asset="tb_main" />
@@ -409,7 +370,7 @@
           <choice>
             <option label="Push her away." scene="pushher"></option>
             <option label="Don't mind her." scene="dontmind"></option>
-            <option label="Unzip your pants." scene="unzip"></option>
+            <option label="Unzip your pants." scene="unzip"></option>b   
           </choice>
           <scene id="pushher">
             <show asset="libzg"/>

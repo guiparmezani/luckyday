@@ -27,7 +27,8 @@ set :nvm_type, :system
 set :nvm_node_path, '/home5/luckyda4/.nvm/versions/node/'
 # set :nvm_path, '/home1/parmezan/.nvm/'    
 set :nvm_path, '/home5/luckyda4/.nvm/'    
-set :nvm_node, 'v5.0.0'
+# set :nvm_node, 'v5.0.0'
+set :nvm_node, 'v6.2.0'
 set :nvm_map_bins, %w{node npm gulp bower}
 # set :nvm_custom_path, '/usr/local/nvm/versions/node'
 
