@@ -1,4 +1,5 @@
 .btn-brand
+	@include transition(all .1s)
 	border: 3px solid $brand-black
 	color: $brand-black
 	border-radius: 0
@@ -10,9 +11,13 @@
 	padding: 18px 0
 	&:hover
 		color: #FFF
+		background-color: $brand-black
 	&.white
 		border: 3px solid #FFFFFF
 		color: #FFFFFF
+		&:hover
+			color: $brand-black
+			background-color: #FFF
 
 .wp_pp_button_submit_btn
 	input

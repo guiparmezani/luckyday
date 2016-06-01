@@ -60,7 +60,7 @@
 				<hr class="divider">
 				<p><?php the_field('second_section_text'); ?></p>
 				<?php if (pll_current_language() === 'en'): ?>
-					<a href="/know-the-models" class="btn btn-brand white pushdown">Know the models></a>
+					<a href="/know-the-models" class="btn btn-brand white pushdown">Know the models</a>
 				<?php else: ?>
 					<a href="/conheca-as-modelos" class="btn btn-brand white pushdown">Conheça as modelos</a>
 				<?php endif ?>

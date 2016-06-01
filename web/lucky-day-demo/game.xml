@@ -5,8 +5,10 @@
   </settings>
   <assets>
 
-    <imagepack name="library1" x="0" y="0" z="20">
-            <image src="assets/images/intro.JPG" name="library" />
+    <imagepack name="game" x="0" y="0" z="20">
+            <image src="assets/images/lib1.JPG" name="lib1" />
+            <image src="assets/images/lib2.JPG" name="lib2" />
+            <image src="assets/images/lib3.JPG" name="lib3" />
     </imagepack>
 
 
@@ -34,6 +36,9 @@
   </assets>
 
   <scenes>
+    <set asset="game" image="intro" duration="0" />
+    <show asset="game" />
+    <show asset="tb_main" />
     <line s="t">
      This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience."
     </line>
@@ -43,12 +48,202 @@
         <option label="Play Nikki's House scene." scene="nikki"></option>
         <option label="Play the Jail scene." scene="jail"></option>
       </choice>
+    </scene>
+
+    <scene id="nikki">
+     
+     <set asset="game" image="lib1" duration="0" />
+     <show asset="game" />
+     <show asset="tb_main" />
+     <line s="t">
+      Nikki comes from the shower wrapped in a towel.
+     </line> 
+     
+    </scene>
+
+    <scene id="jail">
+
+        <set asset="game" image="lib3" duration="0" />
+        <show asset="game" />
+
+        <line s="t">
+           You're taken to interrogatory
+        </line>
+        <set asset="game" image="lib1" duration="0" />
+        <show asset="game" />
+
+        <choice>
+           <option label="Ask her to uncuff your hands." scene="cop"></option>
+           <option label="Swear you know nothing." scene="cop"></option>
+           <option label="Ask for a lawyer." scene="cop"></option>
+        </choice>
+        <scene id="cop">
+         <line s="cop">
+            Shut up, I give the orders here!
+         </line>
+         <line s="t">
+            She slaps you in the face.
+         </line>
+        </scene>
+        <goto scene="floor" />
+      </scene>
+        <scene id="floor">
+          <line s="cop">
+            Go down to the floor like the dirty little dog you are!
+          </line>
+          <choice>
+           <option label="Obbey." scene="obbeycop"></option>
+           <option label="Refuse to obbey." scene="refusecop"></option>
+           <option label="Try to escape." scene="escapecop"></option>
+          </choice>
+          <scene id="obbeycop">
+           <line s="t">
+            You knee on the ground.
+           </line>
+           <line s="cop">
+             Now lick my feet!
+           </line>             
+           <choice>
+            <option label="Obbey." scene="obbeycop2"></option>
+            <option label="Refuse to obbey." scene="refusecop"></option>
+            <option label="Try to escape." scene="escapecop"></option>
+           </choice>
+           <scene id="obbeycop2">
+             <line s="cop">
+                   Good boy. Now take off my panties with your mouth.             
+             </line>
+             <choice>
+              <option label="Obbey." scene="obbeycop3"></option>
+              <option label="Refuse to obbey." scene="refusecop"></option>
+              <option label="Try to escape." scene="escapecop"></option>
+             </choice>
+             <scene id="obbeycop3">
+              <line s="cop">
+                  You like the view, don't you?
+              </line>                         
+              <choice>
+               <option label="-Yes, madam!" scene="boring"></option>
+               <option label="-I'm not worth of looking at it!" scene="obbeycop4"></option>
+               <option label="-Please, let me go!" scene="obbeycop4"></option>
+              </choice>
+              <scene id="boring">
+                 <line s="cop">
+                   You're actually enjoying it? You perv! Get out of here!
+                 </line>
+                 <line s="t">
+                        The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
+                 </line>
+                 <restart />
+              
+              </scene>
+              <scene id="obbeycop4">
+               <line s="cop">
+                   Too bad! You won't be getting any of this.
+               </line>
+               <line s="cop">
+                  Now open your mouth!
+               </line>
+               <line s="t">
+                  She gags you with her panties.
+               </line>
+               <line s="you">
+                Wait... Where did she go?
+               </line>
+               <choice>
+                <option label="Use the opportunity to escape." scene="escape"></option>
+                <option label="Wait for her to return." scene="waitcop"></option>
+               </choice>
+              </scene>
+               <scene id="waitcop">
+                <line s="t">
+                 She returns to the room completely naked.
+                </line>
+                <line s="cop">
+                 Now for the second part...
+                </line>
+                <line s="t">
+                        The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
+                </line>
+                <restart />                                     
+               </scene>
+             </scene>
+           </scene>
+        </scene>
+      
+          <scene id="refusecop">
+               <line s="cop">
+                   How dare you refuse to obbey my orders? You'll learn to respect my authority!
+               </line>
+               <line s="t">
+                   She hits you with her police baton.
+               </line>
+               <line s="cop">
+                   Will you obbey my orders now?
+               </line>
+               <choice>
+                <option label="-Yes, I'm sorry." scene="floor"></option>
+                <option label="-No, I refuse to accept any abuse of power!" scene="refusecop2"></option>
+               </choice>
+               <scene id="refusecop2">
+                 <line s="cop">
+                   Oh, you want to play the tough kind?
+                 </line>
+                 <line s="t">
+                  She takes off her panties.                   
+                 </line>
+                 <line s="cop">
+                   Hold you breath now, you'll need it. 
+                 </line>
+                 <line s="t">
+                   She sits on your face.
+                 </line>
+                 <line s="t">
+                   You lose your breath and end up passing out.
+                 </line>
+                 <line s="t">
+                        The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
+                 </line>
+                 <restart />
+          </scene>
+              
+          <scene id="escapecop">
+            <line s="t">
+             While trying to escape, another cop bursts into the room.
+            </line> 
+            <line s="cop">
+              You're under arrest for trying to sexually assault a cop!
+            </line>
+            <line s="you">
+              Wait, what? I didn't do anything!
+            </line>
+            <line s="t">
+              You end up in prison, where the cop comes to visit you from time to time.
+            </line>
+            <line s="t">
+                        The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
+            </line>
+            <restart />            
+               
+          </scene>
+          <scene id="escape">
+            <line s="t">
+             You manage to escape to room while the cop was away.
+            </line>
+            <line s="t">
+                        The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
+            </line>
+            <restart />
+          </scene>                
+        </scene>
+      
       <scene id="lib">
+
+        <set asset="game" image="lib3" duration="0" />
+        <show asset="game" />
+
         <line s="t">
                     The library is very quiet.
         </line>
-        <set asset="library1" image="library" duration="0" />
-            <show asset="library1" />
 
         <show asset="libb"/>
         <show image="libb"/>
@@ -370,7 +565,7 @@
           <choice>
             <option label="Push her away." scene="pushher"></option>
             <option label="Don't mind her." scene="dontmind"></option>
-            <option label="Unzip your pants." scene="unzip"></option>b   
+            <option label="Unzip your pants." scene="unzip"></option>
           </choice>
           <scene id="pushher">
             <show asset="libzg"/>

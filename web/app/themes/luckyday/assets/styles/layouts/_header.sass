@@ -12,8 +12,12 @@ header
 			float: left
 			display: block
 			a
+				@include transition(all .1s)
 				text-transform: uppercase
 				font-family: $font-montserrat
 				font-weight: 700
 				font-size: 18px
 				color: $brand-pink
+				&:hover, &:focus, &:active
+					background: transparent
+					color: $brand-yellow
