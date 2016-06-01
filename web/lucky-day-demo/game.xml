@@ -6,9 +6,67 @@
   <assets>
 
     <imagepack name="game" x="0" y="0" z="20">
+            <image src="assets/images/intro.jpg" name="lib1" />
             <image src="assets/images/lib1.JPG" name="lib1" />
             <image src="assets/images/lib2.JPG" name="lib2" />
-            <image src="assets/images/lib3.JPG" name="lib3" />
+            <image src="assets/images/lib3.jpg" name="lib3" />
+            <image src="assets/images/lib4.jpg" name="lib4" />
+            <image src="assets/images/lib5.JPG" name="lib5" />
+            <image src="assets/images/lib6.JPG" name="lib6" />
+            <image src="assets/images/lib7.jpg" name="lib7" />
+            <image src="assets/images/lib10.jpg" name="lib10" />
+            <image src="assets/images/lib12.jpg" name="lib12" />
+            <image src="assets/images/lib13.JPG" name="lib13" />
+            <image src="assets/images/lib14.JPG" name="lib14" />
+            <image src="assets/images/lib16.JPG" name="lib16" />
+            <image src="assets/images/lib17.JPG" name="lib17" />
+            <image src="assets/images/lib18.jpg" name="lib18" />
+            <image src="assets/images/lib19.JPG" name="lib19" />
+            <image src="assets/images/lib23.jpg" name="lib23" />
+            <image src="assets/images/lib24.jpg" name="lib24" />
+            <image src="assets/images/lib25.jpg" name="lib25" />
+            <image src="assets/images/lib27.jpg" name="lib27" />
+            <image src="assets/images/lib28.jpg" name="lib28" />
+            <image src="assets/images/lib30.JPG" name="lib30" />
+            <image src="assets/images/lib31.JPG" name="lib31" />
+            <image src="assets/images/lib32.JPG" name="lib32" />
+            <image src="assets/images/lib33.JPG" name="lib33" />
+            <image src="assets/images/lib34.JPG" name="lib34" />
+            <image src="assets/images/lib35.JPG" name="lib35" />
+            <image src="assets/images/lib36.JPG" name="lib36" />
+            <image src="assets/images/lib37.JPG" name="lib37" />
+            <image src="assets/images/lib38.JPG" name="lib38" />
+            <image src="assets/images/lib39.JPG" name="lib39" />
+            <image src="assets/images/lib40.JPG" name="lib40" />
+            <image src="assets/images/lib40a.JPG" name="lib40a" />
+            <image src="assets/images/lib40b.JPG" name="lib40b" />
+            <image src="assets/images/lib40c.JPG" name="lib40c" />
+
+            <image src="assets/images/cop3.jpg" name="cop3" />
+            <image src="assets/images/cop4.jpg" name="cop4" />
+            <image src="assets/images/cop5.jpg" name="cop5" />
+            <image src="assets/images/cop6.jpg" name="cop6" />
+            <image src="assets/images/cop7.jpg" name="cop7" />
+            <image src="assets/images/cop8.jpg" name="cop8" />
+            <image src="assets/images/cop9.jpg" name="cop9" />
+            <image src="assets/images/cop10.jpg" name="cop10" />
+            <image src="assets/images/cop11.jpg" name="cop11" />
+            <image src="assets/images/cop12.jpg" name="cop12" />
+            <image src="assets/images/cop13.jpg" name="cop13" />
+            <image src="assets/images/cop14.jpg" name="cop14" />
+            <image src="assets/images/cop15.jpg" name="cop15" />
+            <image src="assets/images/cop16.jpg" name="cop16" />
+            <image src="assets/images/cop17.jpg" name="cop17" />
+            <image src="assets/images/cop18.jpg" name="cop18" />
+            <image src="assets/images/cop19.jpg" name="cop19" />
+            <image src="assets/images/cop20.jpg" name="cop20" />
+            <image src="assets/images/cop22.jpg" name="cop22" />
+            <image src="assets/images/cop23.jpg" name="cop23" />
+            <image src="assets/images/cop24.jpg" name="cop24" />
+            <image src="assets/images/cop26.jpg" name="cop25" />
+            <image src="assets/images/cop27.jpg" name="cop27" />
+
+
     </imagepack>
 
 
@@ -36,18 +94,16 @@
   </assets>
 
   <scenes>
-    <set asset="game" image="intro" duration="0" />
-    <show asset="game" />
-    <show asset="tb_main" />
-    <line s="t">
-     This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience."
-    </line>
     <scene id="start">
-      <choice>
+     <show asset="tb_main" />
+     <line s="t">
+      This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience."
+     </line>
+     <choice>
         <option label="Play the Library scene." scene="lib"></option>
         <option label="Play Nikki's House scene." scene="nikki"></option>
         <option label="Play the Jail scene." scene="jail"></option>
-      </choice>
+     </choice>
     </scene>
 
     <scene id="nikki">
@@ -63,24 +119,25 @@
 
     <scene id="jail">
 
-        <set asset="game" image="lib3" duration="0" />
+        <set asset="game" image="cop18" duration="0" />
         <show asset="game" />
 
         <line s="t">
            You're taken to interrogatory
         </line>
-        <set asset="game" image="lib1" duration="0" />
-        <show asset="game" />
-
         <choice>
            <option label="Ask her to uncuff your hands." scene="cop"></option>
            <option label="Swear you know nothing." scene="cop"></option>
            <option label="Ask for a lawyer." scene="cop"></option>
         </choice>
         <scene id="cop">
+         <set asset="game" image="cop15" duration="0" />
+         <show asset="game" />
          <line s="cop">
             Shut up, I give the orders here!
          </line>
+         <set asset="game" image="cop22" duration="0" />
+         <show asset="game" />
          <line s="t">
             She slaps you in the face.
          </line>
@@ -88,6 +145,8 @@
         <goto scene="floor" />
       </scene>
         <scene id="floor">
+          <set asset="game" image="cop20" duration="0" />
+          <show asset="game" />
           <line s="cop">
             Go down to the floor like the dirty little dog you are!
           </line>
@@ -97,8 +156,10 @@
            <option label="Try to escape." scene="escapecop"></option>
           </choice>
           <scene id="obbeycop">
+           <set asset="game" image="cop23" duration="0" />
+           <show asset="game" />
            <line s="t">
-            You knee on the ground.
+            You kneel on the ground.
            </line>
            <line s="cop">
              Now lick my feet!
@@ -109,17 +170,41 @@
             <option label="Try to escape." scene="escapecop"></option>
            </choice>
            <scene id="obbeycop2">
+             <set asset="game" image="cop6" duration="0" />
+             <show asset="game" />
+             <line s="t">
+              You remove her boot...
+             </line>
+             <set asset="game" image="cop7" duration="0" />
+             <show asset="game" />
+             <line s="t">
+              And lick her feet.
+             </line>
+             <set asset="game" image="cop13" duration="0" />
+             <show asset="game" />
              <line s="cop">
-                   Good boy. Now take off my panties with your mouth.             
+                   Good boy. Now I have to check if you're armed. Let's see...
+             </line>
+             <set asset="game" image="cop4" duration="0" />
+             <show asset="game" />
+             <line s="t">
+                   She takes down your pants.
+             </line>
+             <set asset="game" image="cop5" duration="0" />
+             <show asset="game" />
+             <line s="cop">
+                   You're getting a hard on! Explain yourself!
              </line>
              <choice>
-              <option label="Obbey." scene="obbeycop3"></option>
-              <option label="Refuse to obbey." scene="refusecop"></option>
-              <option label="Try to escape." scene="escapecop"></option>
+              <option label="-I'm really sorry about that." scene="obbeycop3"></option>
+              <option label="-I love women giving me orders." scene="boring"></option>
+              <option label="-I could't control myself." scene="obbeycop3"></option>
              </choice>
              <scene id="obbeycop3">
+              <set asset="game" image="cop23" duration="0" />
+              <show asset="game" />
               <line s="cop">
-                  You like the view, don't you?
+                  I see... You like the view, don't you?
               </line>                         
               <choice>
                <option label="-Yes, madam!" scene="boring"></option>
@@ -127,9 +212,13 @@
                <option label="-Please, let me go!" scene="obbeycop4"></option>
               </choice>
               <scene id="boring">
+                 <set asset="game" image="cop17" duration="0" />
+                 <show asset="game" />
                  <line s="cop">
                    You're actually enjoying it? You perv! Get out of here!
                  </line>
+                 <set asset="game" image="cop19" duration="0" />
+                 <show asset="game" />
                  <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
                  </line>
@@ -141,11 +230,30 @@
                    Too bad! You won't be getting any of this.
                </line>
                <line s="cop">
+                   But I'll let you remove my panties with your mouth. Do it, litte dog!
+               </line>
+               <choice>
+                <option label="Obbey." scene="obbeycop5"></option>
+                <option label="Refuse to obbey." scene="refusecop"></option>
+                <option label="Try to escape." scene="escapecop"></option>
+               </choice>
+              </scene>
+              <scene id="obbeycop5">
+               <set asset="game" image="cop11" duration="0" />
+               <show asset="game" />                
+               <line s="t">
+                  You remove her panties using your mouth.
+               </line>
+               <set asset="game" image="cop9" duration="0" />
+               <show asset="game" />                
+               <line s="cop">
                   Now open your mouth!
                </line>
                <line s="t">
                   She gags you with her panties.
                </line>
+               <set asset="game" image="cop27" duration="0" />
+               <show asset="game" />                
                <line s="you">
                 Wait... Where did she go?
                </line>
@@ -155,6 +263,8 @@
                </choice>
               </scene>
                <scene id="waitcop">
+                <set asset="game" image="cop26" duration="0" />
+                <show asset="game" />                
                 <line s="t">
                  She returns to the room completely naked.
                 </line>
@@ -171,12 +281,18 @@
         </scene>
       
           <scene id="refusecop">
+               <set asset="game" image="cop15" duration="0" />
+               <show asset="game" />                
                <line s="cop">
                    How dare you refuse to obbey my orders? You'll learn to respect my authority!
                </line>
+               <set asset="game" image="cop16" duration="0" />
+               <show asset="game" />                
                <line s="t">
                    She hits you with her police baton.
                </line>
+               <set asset="game" image="cop14" duration="0" />
+               <show asset="game" />                
                <line s="cop">
                    Will you obbey my orders now?
                </line>
@@ -188,12 +304,18 @@
                  <line s="cop">
                    Oh, you want to play the tough kind?
                  </line>
+                 <set asset="game" image="cop12" duration="0" />
+                 <show asset="game" />                
                  <line s="t">
-                  She takes off her panties.                   
+                  She remove her panties while you lay on the ground.                   
                  </line>
+                 <set asset="game" image="cop10" duration="0" />
+                 <show asset="game" />                
                  <line s="cop">
                    Hold you breath now, you'll need it. 
                  </line>
+                 <set asset="game" image="cop8" duration="0" />
+                 <show asset="game" />                
                  <line s="t">
                    She sits on your face.
                  </line>
@@ -207,6 +329,8 @@
           </scene>
               
           <scene id="escapecop">
+            <set asset="game" image="cop24" duration="0" />
+            <show asset="game" />                
             <line s="t">
              While trying to escape, another cop bursts into the room.
             </line> 
@@ -216,6 +340,8 @@
             <line s="you">
               Wait, what? I didn't do anything!
             </line>
+            <set asset="game" image="cop3" duration="0" />
+            <show asset="game" />                
             <line s="t">
               You end up in prison, where the cop comes to visit you from time to time.
             </line>
@@ -226,8 +352,13 @@
                
           </scene>
           <scene id="escape">
+            <set asset="game" image="cop19" duration="0" />
+            <show asset="game" />                
             <line s="t">
              You manage to escape to room while the cop was away.
+            </line>
+            <line s="you">
+                 I better go back to the university. The girls are probably worried about me.
             </line>
             <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
@@ -238,22 +369,20 @@
       
       <scene id="lib">
 
-        <set asset="game" image="lib3" duration="0" />
+        <set asset="game" image="lib1" duration="0" />
         <show asset="game" />
-
+        <show asset="tb_main" />
         <line s="t">
                     The library is very quiet.
         </line>
 
-        <show asset="libb"/>
-        <show image="libb"/>
-        <show asset="tb_main" />
+        <set asset="game" image="lib2" duration="0" />
+        <show asset="game" />
         <line s="you">
                     Let's grab our book.
                 </line>
-        <show asset="libc"/>
-        <show image="libc"/>
-        <show asset="tb_main" />
+        <set asset="game" image="lib3" duration="0" />
+        <show asset="game" />
         <line s="s">
                     "I can't reach it. Can you help me?"
         </line>
@@ -262,21 +391,18 @@
           <option label="Lift Her." scene="lifther"></option>
         </choice>
         <scene id="lift">
-          <show asset="libd"/>
-          <show image="libd"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib4" duration="0" />
+          <show asset="game" />
           <line s="s">
                      Has anyone ever taught you how to be a gentleman?
           </line>
-          <show asset="libe"/>
-          <show image="libe"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib5" duration="0" />
+          <show asset="game" />
           <line s="t">
                     "She tries to lift you."
           </line>
-          <show asset="libf"/>
-          <show image="libf"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib6" duration="0" />
+          <show asset="game" />
           <line s="t">
                     You're too heavy and enp up falling over her.
           </line>
@@ -290,23 +416,20 @@
         </scene>
       </scene>
       <scene id="lifther">
-        <show asset="libg"/>
-        <show image="libg"/>
-        <show asset="tb_main" />
+        <set asset="game" image="lib19" duration="0" />
+        <show asset="game" />        
         <choice>
           <option label="Peek under her skirt." scene="peek"></option>
           <option label="Don't peek under her skirt." scene="studyinglib"></option>
         </choice>
         <scene id="peek">
-          <show asset="libh"/>
-          <show image="libh"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib7" duration="0" />
+          <show asset="game" />
           <line s="t">
                     You peek under her skirt.
           </line>
-          <show asset="libi"/>
-          <show image="libi"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib10" duration="0" />
+          <show asset="game" />
           <line s="t">
                     Sarah realizes you're looking under her skirt and gets mad at you.
           </line>
@@ -316,15 +439,13 @@
           <goto scene="studyinglib" />
         </scene>
         <scene id="studyinglib">
-          <show asset="libj"/>
-          <show image="libj"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib12" duration="0" />
+          <show asset="game" />
           <line s="s">
                    Now that we've got our book, let's sit somewhere quiet to study.
           </line>
-          <show asset="libk"/>
-          <show image="libk"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib36" duration="0" />
+          <show asset="game" />
           <line s="t">
                    You and Sarah are studying when Claire approaches.
           </line>
@@ -336,15 +457,13 @@
             <option label="-Why don't you join us Claire?" scene="joinclaire"></option>
           </choice>
           <scene id="excuseclaire">
-           <show asset="libl"/>
-           <show image="libl"/>
-           <show asset="tb_main" />
+            <set asset="game" image="lib39" duration="0" />
+            <show asset="game" />
             <line s="c">
                     Oh, sorry to bother the couple. I'll just leave you guys alone.
             </line>
-            <show asset="libm"/>
-            <show image="libm"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib13" duration="0" />
+            <show asset="game" />
             <line s="t">
                      You go back to teaching Sarah about the subject.
             </line>
@@ -353,9 +472,8 @@
               <option label="Touch her hand." scene="touchhand"></option>
             </choice>
             <scene id="compliment">
-              <show asset="libn"/>
-              <show image="libn"/>
-              <show asset="tb_main" />
+              <set asset="game" image="lib14" duration="0" />
+              <show asset="game" />
               <line s="s">
                      Thanks. That's because you're so good at teaching me!
               </line>
@@ -365,21 +483,18 @@
                 <option label="-I'm awesome, I know it." scene="awesome"></option>
               </choice>
               <scene id="sexlib">
-                <show asset="libo"/>
-                <show image="libo"/>
-                <show asset="tb_main" />
+                <set asset="game" image="lib16" duration="0" />
+                <show asset="game" />
                 <line s="s">
                        Come with me. I have an idea.
                 </line>
-                <show asset="libp"/>
-                <show image="libp"/>
-                <show asset="tb_main" />
+                <set asset="game" image="lib17" duration="0" />
+                <show asset="game" />
                 <line s="t">
                        She takes you to a hidden place behind the shelves.
                 </line>
-                <show asset="libq"/>
-                <show image="libq"/>
-                <show asset="tb_main" />
+                <set asset="game" image="lib18" duration="0" />
+                <show asset="game" />
                 <line s="s">
                        I want you to fuck me, right here, right now.
                 </line>
@@ -388,9 +503,8 @@
                   <option label="-You don't need to ask twice! Let's fuck!" scene="sexshelves"></option>
                 </choice>
                 <scene id="coward">
-                  <show asset="libd"/>
-                  <show image="libd"/>
-                  <show asset="tb_main" />
+                  <set asset="game" image="lib4" duration="0" />
+                  <show asset="game" />
                   <line s="s">
                         You're such a coward! Let's go somewhere else then.                        
                   </line>
@@ -403,36 +517,31 @@
             </scene>
           </scene>
           <scene id="sexhelves">
-            <show asset="libr"/>
-            <show image="libr"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib23" duration="0" />
+            <show asset="game" />
             <line s="t">
                          You start by making out with her and taking off her clothes.
             </line>
-            <show asset="libs"/>
-            <show image="libs"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib24" duration="0" />
+            <show asset="game" />
             <line s="s">
                        We're going to do something crazy.
             </line>
-            <show asset="libt"/>
-            <show image="libt"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib25" duration="0" />
+            <show asset="game" />
             <line s="t">
                        You two get naked and start fucking in the library, despite of having people nearby.
             </line>
-            <show asset="libu"/>
-            <show image="libu"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib27" duration="0" />
+            <show asset="game" />
             <line s="s">
                        Wait, I think I heard someone coming!
             </line>
             <line s="you">
                          Grab books and cover yourself, quick!
             </line>
-            <show asset="libv"/>
-            <show image="libv"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib28" duration="0" />
+            <show asset="game" />
             <line s="t">
                        You and Sarah are caught and expelled from the library.
             </line>
@@ -443,11 +552,10 @@
           </scene>
         </scene>
         <scene id="touchhand">
-          <show asset="libx"/>
-          <show image="libx"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib35" duration="0" />
+          <show asset="game" />
           <line s="s">
-                      Be honest to me, you haven't brought me here to study, have you?
+                      Be honest with me, you haven't brought me here to study, have you?
           </line>
           <choice>
             <option label="-Actually, no. You got me." scene="sexlib"></option>
@@ -455,9 +563,8 @@
             <option label="-Of course we're here to study! You have a test tomorrow!" scene="awesome"></option>
           </choice>
           <scene id="awesome">
-            <show asset="libm"/>
-            <show image="libm"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib13" duration="0" />
+            <show asset="game" />
             <line s="s">
                         Ohh... How boring...
             </line>
@@ -468,18 +575,16 @@
           </scene>
         </scene>
         <scene id="joinclaire">
-          <show asset="libw"/>
-          <show image="libw"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib37" duration="0" />
+          <show asset="game" />
           <line s="t">
                     Claire sits by Sarah's side. Sarah is not very fond about it.
           </line>
           <line s="you">
                      Well, Sarah, let's continue...
           </line>
-          <show asset="liby"/>
-          <show image="liby"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib38" duration="0" />
+          <show asset="game" />
           <line s="t">
                      Claire drops her pen under the table.
           </line>
@@ -491,9 +596,8 @@
             <option label="Let her grab the pen." scene="letgrab"></option>
           </choice>
           <scene id="grabpen">
-            <show asset="libz"/>
-            <show image="libz"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib30" duration="0" />
+            <show asset="game" />
             <line s="t">
                        You go under the table. You can see Sarah's panties from there.
             </line>
@@ -503,9 +607,8 @@
               <option label="Touch her lady parts." scene="touch"></option>
             </choice>
             <scene id="grabsit">
-              <show asset="libw"/>
-              <show image="libw"/>
-              <show asset="tb_main" />
+              <set asset="game" image="lib37" duration="0" />
+              <show asset="game" />
               <line s="t">
                          You grab the pen and return to your place.
               </line>
@@ -519,21 +622,18 @@
             </scene>
           </scene>
           <scene id="caress">
-            <show asset="libza"/>
-            <show image="libza"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib31" duration="0" />
+            <show asset="game" />
             <line s="t">
                          You tease her by touching her legs.
             </line>
-            <show asset="libzc"/>
-            <show image="libzc"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib33" duration="0" />
+            <show asset="game" />
             <line s="t">
-                         She discreetly takes off her panties.
+                         She discreetly remove her panties.
             </line>
-            <show asset="libzd"/>
-            <show image="libzd"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib34" duration="0" />
+            <show asset="game" />
             <line s="t">
                         ...and spread her legs, revealing her pussy to you.
             </line>
@@ -544,9 +644,8 @@
           </scene>
         </scene>
         <scene id="touch">
-          <show asset="libzb"/>
-          <show image="libzb"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib32" duration="0" />
+          <show asset="game" />
           <line s="t">
                         She kicks you in the nose, breaking it. You're taken to the hospital.
           </line>
@@ -556,9 +655,8 @@
           <restart />
         </scene>
         <scene id="letgrab">
-          <show asset="libze"/>
-          <show image="libze"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib40a" duration="0" />
+          <show asset="game" />
           <line s="t">
                        She goes under the table and starts caressing your crotch.
           </line>
@@ -568,21 +666,18 @@
             <option label="Unzip your pants." scene="unzip"></option>
           </choice>
           <scene id="pushher">
-            <show asset="libzg"/>
-            <show image="libzg"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib40b" duration="0" />
+            <show asset="game" />
             <line s="t">
                          Claire returns to her sit.
             </line>
-            <show asset="libl"/>
-            <show image="libl"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib39" duration="0" />
+            <show asset="game" />
             <line s="c">
                         I think I might be bothering you, so if you excuse me... I'm leaving.
             </line>
-            <show asset="libm"/>
-            <show image="libm"/>
-            <show asset="tb_main" />
+            <set asset="game" image="lib13" duration="0" />
+            <show asset="game" />
             <line s="s">
                        What happened to her all of a sudden?
             </line>
@@ -596,15 +691,13 @@
           </scene>
         </scene>
         <scene id="dontmind">
-          <show asset="libzf"/>
-          <show image="libzf"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib40" duration="0" />
+          <show asset="game" />
           <line s="t">
                        Claire unzips your pants and grabs your cock...
           </line>
-          <show asset="libzh"/>
-          <show image="libzh"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib40c" duration="0" />
+          <show asset="game" />
           <line s="t">
                         She then starts to give you a blowjob under the table.
           </line>
@@ -614,15 +707,13 @@
           <restart />
         </scene>
         <scene id="unzip">
-          <show asset="libzf"/>
-          <show image="libzf"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib40" duration="0" />
+          <show asset="game" />
           <line s="t">
                        Surprised, Claire grabs your cock...
           </line>
-          <show asset="libzh"/>
-          <show image="libzh"/>
-          <show asset="tb_main" />
+          <set asset="game" image="lib40c" duration="0" />
+          <show asset="game" />
           <line s="t">
                         She then starts to give you a blowjob under the table.
           </line>
