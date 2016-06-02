@@ -6,7 +6,7 @@
   <assets>
 
     <imagepack name="game" x="0" y="0" z="20">
-            <image src="assets/images/intro.jpg" name="lib1" />
+            <image src="assets/images/intro.jpg" name="intro" />
             <image src="assets/images/lib1.JPG" name="lib1" />
             <image src="assets/images/lib2.JPG" name="lib2" />
             <image src="assets/images/lib3.jpg" name="lib3" />
@@ -66,7 +66,42 @@
             <image src="assets/images/cop26.jpg" name="cop25" />
             <image src="assets/images/cop27.jpg" name="cop27" />
 
+            <image src="assets/images/nh7.jpg" name="nh7" />
+            <image src="assets/images/nh8.jpg" name="nh8" />
+            <image src="assets/images/nh9.jpg" name="nh9" />
+            <image src="assets/images/nh10.jpg" name="nh10" />
+            <image src="assets/images/nh11.jpg" name="nh11" />
+            <image src="assets/images/nh12.jpg" name="nh12" />
+            <image src="assets/images/nh13.jpg" name="nh13" />
+            <image src="assets/images/nh17.jpg" name="nh17" />
+            <image src="assets/images/nh20.jpg" name="nh20" />
+            <image src="assets/images/nh20b.jpg" name="nh20b" />
+            <image src="assets/images/nh21.jpg" name="nh21" />
+            <image src="assets/images/nh23a.jpg" name="nh23a" />
+            <image src="assets/images/nh23b.jpg" name="nh23b" />
+            <image src="assets/images/nh23c.jpg" name="nh23c" />
+            <image src="assets/images/nh25.jpg" name="nh25" />
+            <image src="assets/images/nh26.jpg" name="nh26" />
+            <image src="assets/images/nh26b.jpg" name="nh26b" />
+            <image src="assets/images/nh28.jpg" name="nh28" />
+            <image src="assets/images/nh40b.jpg" name="nh40b" />
+            <image src="assets/images/nh42.jpg" name="nh42" />
+            <image src="assets/images/nh43.jpg" name="nh43" />
+            <image src="assets/images/nh44.jpg" name="nh44" />
+            <image src="assets/images/nh45.jpg" name="nh45" />
+            <image src="assets/images/nh46.jpg" name="nh46" />
+            <image src="assets/images/nh46b.jpg" name="nh46b" />
+            <image src="assets/images/nh47.JPG" name="nh47" />
+            <image src="assets/images/nh48.JPG" name="nh48" />
+            <image src="assets/images/nh49.JPG" name="nh49" />
+            <image src="assets/images/nh50.JPG" name="nh50" />
+            <image src="assets/images/nh51.JPG" name="nh51" />
+            <image src="assets/images/nh52.JPG" name="nh52" />
+            <image src="assets/images/nh53.JPG" name="nh53" />
+            <image src="assets/images/nh54.JPG" name="nh54" />
+            <image src="assets/images/nh57.jpg" name="nh57" />
 
+            <image src="assets/images/title.JPG" name="title" />
     </imagepack>
 
 
@@ -97,7 +132,7 @@
     <scene id="start">
      <show asset="tb_main" />
      <line s="t">
-      This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience."
+      This short teaser contains 3 scenes from the game, adapted and out of context to give a glimpse of the full experience.
      </line>
      <choice>
         <option label="Play the Library scene." scene="lib"></option>
@@ -108,14 +143,491 @@
 
     <scene id="nikki">
      
-     <set asset="game" image="lib1" duration="0" />
+     <set asset="game" image="nh48" duration="0" />
      <show asset="game" />
      <show asset="tb_main" />
      <line s="t">
       Nikki comes from the shower wrapped in a towel.
      </line> 
-     
+     <line s="b">
+      Why don't you order a pizza while a put some clothes on?
+     </line> 
+     <choice>
+           <option label="Wait for Nikki to put some clothes on." scene="movie"></option>
+           <option label="Offer to cook something." scene="cook"></option>
+           <option label="Dare her to answer the delivery boy naked." scene="noway"></option>
+           <option label="Dare her to answer the delivery boy wrapped in the towel." scene="towel"></option>
+     </choice>
     </scene>
+
+    <scene id="noway">
+     <set asset="game" image="nh52" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Are you crazy? No way!
+     </line> 
+     <set asset="game" image="nh47" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       I'll change my clothes. Why don't we watch a movie when I come back?
+     </line> 
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+        Nikki comes from the bedroom already dressed.
+     </line> 
+     <goto scene="movie" />
+    </scene>
+
+    <scene id="movie">
+     <line s="b">
+      So, what kind of movies do you like?
+     </line> 
+     <choice>
+           <option label="Romance." scene="grabmovie"></option>
+           <option label="Comedy." scene="grabmovie"></option>
+           <option label="Tentacle japanese porn." scene="eww"></option>
+           <option label="Horror." scene="grabmovie2"></option>
+     </choice>
+    </scene>
+
+    <scene id="grabmovie">
+     <set asset="game" image="nh21" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Not really my kind of movie, but OK.
+     </line> 
+     <goto scene="didyouhear" />
+    </scene>
+
+    <scene id="didyouhear">
+     <line s="t">
+      While watching the movie, you hear a loud sound coming from the kitchen.
+     </line> 
+     <set asset="game" image="nh25" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Did you hear that? The sound came from the kitchen. I'm scared...
+     </line> 
+     <choice>
+           <option label="-I'll go and check." scene="grabmovie"></option>
+           <option label="-Let's call 911!" scene="keepwatching1"></option>
+           <option label="-It's nothing, let's keep watching the movie." scene="eww"></option>
+     </choice>
+    </scene>
+
+    <scene id="eww">
+     <set asset="game" image="nh23a" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Are you serious? Stop messing with me... I think I have a box of DVDs down here.
+     </line> 
+     <set asset="game" image="nh23b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Nikki bend over to grab the DVD box.
+     </line> 
+     <set asset="game" image="nh23c" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      You realize she is not wearing panties under her skirt.
+     </line> 
+     <goto scene="watching" />
+    </scene>
+
+    <scene id="grabmovie">
+     <set asset="game" image="nh46" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      You go to the kitchen to check the source of the sound.
+     </line> 
+     <set asset="game" image="nh46b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Suddenly someone jumps from the corner and grabs you.
+     </line>
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="grabmovie2">
+     <set asset="game" image="nh23a" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      That's my favorite kind of movie! I think I have a really good one down here.
+     </line>     
+     <set asset="game" image="nh23b" duration="0" />
+     <show asset="game" />  
+     <line s="t">
+      Nikki bend over to grab the DVD box.
+     </line> 
+     <set asset="game" image="nh23c" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      You realize she is not wearing panties under her skirt.
+     </line> 
+     <goto scene="watching" />
+    </scene>
+
+    <scene id="watching">  
+     <set asset="game" image="nh21" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      She sits on the couch and you two start watching the movie.
+     </line>       
+     <choice>
+           <option label="Invite her to lay down on your lap." scene="layonlap"></option>
+           <option label="Hug her." scene="holdnikki"></option>
+     </choice>
+    </scene>
+
+    <scene id="layonlap">
+     <set asset="game" image="nh42" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      She lays her head on your lap.
+     </line>            
+     <line s="t">.
+      You start to get an unexpected boner.
+     </line>      
+     <choice>          
+           <option label="Let your boner rise on its full glory" scene="boner"></option>
+           <option label="Think about something else to make the boner go away." scene="boneraway"></option>
+     </choice>
+    </scene>
+
+    <scene id="boner">
+     <line s="t">.
+      Nikki feels your boner poking her.
+     </line>                
+     <line s="b">.
+      Is that what I think it is?
+     </line>                
+     <choice>          
+           <option label="Yes, it is." scene="bj"></option>
+           <option label="It's just... My cellphone." scene="ohisee"></option>
+           <option label="How could I control myself? The actress in the movie is so sexy!" scene="bj"></option>
+           <option label="How could I control myself? The actor in the movie is so handsome!" scene="gayboner"></option>
+     </choice>
+    </scene>
+
+    <scene id="ohisee">
+     <set asset="game" image="nh25" duration="0" />
+     <show asset="game" />
+     <line s="b">.
+      Oh, I see. I got scared there for a moment.
+     </line>
+     <line s="t">.
+      You start feeling the urge to go to the restroom.
+     </line>                
+     <choice>
+           <option label="Hold the urge like a champ." scene="farts"></option>
+           <option label="Ask to use the restroom." scene="restroom"></option>
+     </choice>           
+    </scene>
+
+    <scene id="bj">
+     <set asset="game" image="nh43" duration="0" />
+     <show asset="game" />
+     <line s="b">.
+      I'll do something about it.
+     </line>      
+     <set asset="game" image="nh45" duration="0" />
+     <show asset="game" />     
+     <line s="t">.
+      She grabs your cock and gives you a blowjob.
+     </line>      
+     <set asset="game" image="nh44" duration="0" />
+     <show asset="game" />     
+     <line s="b">.
+      Come with me, let's go to my bedroom.
+     </line>           
+     <set asset="game" image="nh28" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      She pulls you with her.
+     </line>           
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="gayboner">
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <line s="b">.
+      Wait, you're gay?
+     </line>           
+     <line s="you">.
+      Sorry I haven't told you before.
+     </line>      
+     <set asset="game" image="nh28" duration="0" />
+     <show asset="game" />     
+     <line s="b">.
+      If you don't mind... I have an idea. Come with me, I always wanted to try something.
+     </line>      
+     <set asset="game" image="nh7" duration="0" />
+     <show asset="game" />     
+     <line s="t">.
+       Nikki takes you to the shower. She fingers your butthole, stimulating your prostate.
+     </line>      
+     <set asset="game" image="nh8" duration="0" />
+     <show asset="game" />     
+     <line s="t">.
+       You end up sleeping by her side having doubts about your sexuality.
+     </line>           
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="boneraway">
+     <line s="t">.
+       You remember how lame were the star wars prequels. The boner goes away imediately.
+     </line>                
+     <line s="t">.
+      You start feeling the urge to go to the restroom.
+     </line>                
+     <choice>
+           <option label="Hold the urge like a champ." scene="farts"></option>
+           <option label="Ask to use the restroom." scene="restroom"></option>
+     </choice>
+    </scene>
+
+    <scene id="holdnikki">
+     <set asset="game" image="nh25" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      You hold her close to you.
+     </line>                
+     <line s="t">.
+      You start feeling the urge to go to the restroom.
+     </line>                
+     <choice>
+           <option label="Hold the urge like a champ." scene="farts"></option>
+           <option label="Ask to use the restroom." scene="restroom"></option>
+     </choice>
+    </scene>
+
+    <scene id="farts">
+     <set asset="game" image="nh57" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      You can't hold any longer and start farting uncontrollably.
+     </line>                
+     <line s="b">.
+      Ew, you're disgusting. You ruined the mood!
+     </line>
+     <line s="t">.
+      She kicks you out and never talks to you again.
+     </line>
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="restroom">
+     <set asset="game" image="nh26" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      You go to the restroom and take an epic shit.
+     </line>
+     <set asset="game" image="nh26b" duration="0" />
+     <show asset="game" />
+     <line s="t">.
+      You then realize the flusher is not working.
+     </line>
+     <line s="t">.
+      How will you get out of this situation?
+     </line>
+     <goto scene="credits" />
+    </scene> 
+
+    <scene id="cook">
+     <line s="you">
+        Leave it to me. I'll prepare something for us.
+     </line>        
+     <set asset="game" image="nh46" duration="0" />
+     <show asset="game" />
+     <line s="t">
+           You go to the kitchen to prepare something while Nikki is changing.
+     </line> 
+     <set asset="game" image="nh13" duration="0" />
+     <show asset="game" />
+     <line s="t">
+           You put the oil to heat.
+     </line> 
+     <set asset="game" image="nh10" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       A cute little kitten comes to you and starts meowing.
+     </line> 
+     <choice>
+           <option label="Pet the cat." scene="petcat"></option>
+           <option label="Kick the cat." scene="kickcat"></option>
+           <option label="Ignore the cat and keep cooking." scene="cook2"></option>
+     </choice>
+    </scene>
+
+    <scene id="cook2">
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Hey! That's smelling good. Why don't we eat and go watch a movie on the couch?
+     </line> 
+     <goto scene="movie"/>
+    </scene>
+
+    <scene id="petcat"> 
+     <set asset="game" image="nh12" duration="0" />
+     <show asset="game" />
+     <line s="you">
+        Hello Mr. Kittens, how are you?
+     </line> 
+     <set asset="game" image="nh9" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       When you realize, the frying pan is on fire.
+     </line>
+     <set asset="game" image="nh17" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       You escape the house, but Nikki dies on the fire.
+     </line>            
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="kickcat"> 
+     <set asset="game" image="nh11" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       You kick the cat away.
+     </line>
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Nikki comes from the bedroom already dressed.
+     </line>
+     <line s="you">
+       Bacon is ready!
+     </line>
+     <line s="b">
+        Great! Bring it to the TV room!
+     </line>
+     <set asset="game" image="nh20b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Suddenly the cat jumps on your face.
+     </line>
+     <line s="you">
+       Take this beast away from me!
+     </line>
+     <set asset="game" image="nh40b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       You fall to the ground.
+     </line>
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="noway">
+     <set asset="game" image="nh52" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       No way! I'd have to be drunk to do something crazy like that!
+     </line>
+     <set asset="game" image="nh47" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       I'll put some clothes now. We can eat while watching a movie.
+     </line>
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+        Nikki comes from the bedroom already dressed.
+     </line> 
+     <goto scene="movie" />
+    </scene>
+
+    <scene id="towel">
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       That's going to be such a thrill! Stay nearby in case he gets any funny ideas.
+     </line>
+     <set asset="game" image="nh49" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       The delivery boy arrives.
+     </line>
+     <line s="b">
+       Hi! I'm sorry, I was jut getting out of the shower.
+     </line>
+     <line s="boy">
+       Wow! No problem. It's a hot day after all, right?
+     </line>
+     <choice>
+           <option label="Wait for Nikki to pay the pizza." scene="pizzapay"></option>
+           <option label="Pull Nikki's towel." scene="pulltowel"></option>
+     </choice>
+    </scene>
+
+    <scene id="pizzapay">
+     <set asset="game" image="nh53" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Nikki pays for the pizza and give decide to give the delivery boy a glimpse.
+     </line>
+     <set asset="game" image="nh54" duration="0" />
+     <show asset="game" />
+     <line s="boy">
+       Wow, thanks for the tip.
+     </line>
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       That was so much fun! Did you see his face? Haha.
+     </line>
+     <line s="b">
+       I'll put some clothes now. We can eat while watching a movie.
+     </line>
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+        Nikki comes from the bedroom already dressed.
+     </line> 
+     <goto scene="movie" />
+    </scene>
+
+    <scene id="pulltowel">
+     <set asset="game" image="nh50" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       You pull her towel, surpring both her and the delivery boy.
+     </line>     
+     <set asset="game" image="nh51" duration="0" />
+     <show asset="game" /> 
+     <line s="t">
+       She covers herself with her bare hands.
+     </line>     
+     <line s="boy">
+       Err... I'll just leave the pizza here and go.
+     </line>     
+     <set asset="game" image="nh52" duration="0" />
+     <show asset="game" />  
+     <line s="b">
+       You asshole! Why did you do that? You embarrassed me!
+     </line>      
+     <line s="you">
+       At least we got free pizza.
+     </line>      
+     <line s="b">
+       Get the fuck out!
+     </line>                        
+     <goto scene="credits" />
+    </scene>                  
+
+    <scene id="credits">
+     <set asset="game" image="title" duration="0" />
+     <show asset="game" />  
+     <line s="t">
+                        The demo ends here. Please purchase the full game, which contains over 75 different scenes, 15 models, and fully uncensored scenes.
+     </line>
+     <restart /> 
+    </scene>                  
 
     <scene id="jail">
 
@@ -123,7 +635,7 @@
         <show asset="game" />
 
         <line s="t">
-           You're taken to interrogatory
+           You're taken to interrogatory.
         </line>
         <choice>
            <option label="Ask her to uncuff your hands." scene="cop"></option>
@@ -141,8 +653,8 @@
          <line s="t">
             She slaps you in the face.
          </line>
+         <goto scene="floor" />
         </scene>
-        <goto scene="floor" />
       </scene>
         <scene id="floor">
           <set asset="game" image="cop20" duration="0" />
@@ -220,6 +732,11 @@
                  <set asset="game" image="cop19" duration="0" />
                  <show asset="game" />
                  <line s="t">
+                   At least you're free now.
+                 </line>
+                 <set asset="game" image="title" duration="0" />
+                 <show asset="game" />  
+                 <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
                  </line>
                  <restart />
@@ -271,6 +788,8 @@
                 <line s="cop">
                  Now for the second part...
                 </line>
+                <set asset="game" image="title" duration="0" />
+                <show asset="game" />  
                 <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
                 </line>
@@ -322,6 +841,8 @@
                  <line s="t">
                    You lose your breath and end up passing out.
                  </line>
+                 <set asset="game" image="title" duration="0" />
+                 <show asset="game" />  
                  <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
                  </line>
@@ -345,6 +866,8 @@
             <line s="t">
               You end up in prison, where the cop comes to visit you from time to time.
             </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
             <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
@@ -360,6 +883,8 @@
             <line s="you">
                  I better go back to the university. The girls are probably worried about me.
             </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
             <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
@@ -384,7 +909,7 @@
         <set asset="game" image="lib3" duration="0" />
         <show asset="game" />
         <line s="s">
-                    "I can't reach it. Can you help me?"
+                    I can't reach it. Can you help me?
         </line>
         <choice x="5px" y="355px">
           <option label="Ask her to lift you." scene="lift"></option>
@@ -399,7 +924,7 @@
           <set asset="game" image="lib5" duration="0" />
           <show asset="game" />
           <line s="t">
-                    "She tries to lift you."
+                    She tries to lift you.
           </line>
           <set asset="game" image="lib6" duration="0" />
           <show asset="game" />
@@ -412,7 +937,7 @@
           <line s="you">
                     Sorry. At least I got the book.
           </line>
-          <goto scene="studyinglib" />
+          <goto scene="studyinglib2" />
         </scene>
       </scene>
       <scene id="lifther">
@@ -444,6 +969,9 @@
           <line s="s">
                    Now that we've got our book, let's sit somewhere quiet to study.
           </line>
+          <goto scene="studyinglib2" />
+        </scene>
+        <scene id="studyinglib2">
           <set asset="game" image="lib36" duration="0" />
           <show asset="game" />
           <line s="t">
@@ -508,6 +1036,8 @@
                   <line s="s">
                         You're such a coward! Let's go somewhere else then.                        
                   </line>
+                  <set asset="game" image="title" duration="0" />
+                  <show asset="game" />  
                   <line s="t">
                         The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
                   </line>
@@ -516,7 +1046,7 @@
               </scene>
             </scene>
           </scene>
-          <scene id="sexhelves">
+          <scene id="sexshelves">
             <set asset="game" image="lib23" duration="0" />
             <show asset="game" />
             <line s="t">
@@ -545,6 +1075,8 @@
             <line s="t">
                        You and Sarah are caught and expelled from the library.
             </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
             <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
@@ -568,6 +1100,8 @@
             <line s="s">
                         Ohh... How boring...
             </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
             <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
@@ -578,7 +1112,7 @@
           <set asset="game" image="lib37" duration="0" />
           <show asset="game" />
           <line s="t">
-                    Claire sits by Sarah's side. Sarah is not very fond about it.
+                    Claire sits by Sarah's side. Sarah is not very fond of it.
           </line>
           <line s="you">
                      Well, Sarah, let's continue...
@@ -615,6 +1149,8 @@
               <line s="c">
                          You're so nice, thank you. Why don't we go out later?
               </line>
+              <set asset="game" image="title" duration="0" />
+              <show asset="game" />  
               <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
               </line>
@@ -637,6 +1173,8 @@
             <line s="t">
                         ...and spread her legs, revealing her pussy to you.
             </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
             <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
@@ -649,6 +1187,8 @@
           <line s="t">
                         She kicks you in the nose, breaking it. You're taken to the hospital.
           </line>
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
           <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
           </line>
@@ -658,7 +1198,7 @@
           <set asset="game" image="lib40a" duration="0" />
           <show asset="game" />
           <line s="t">
-                       She goes under the table and starts caressing your crotch.
+                       She goes under the table and starts to caress your crotch.
           </line>
           <choice>
             <option label="Push her away." scene="pushher"></option>
@@ -684,6 +1224,8 @@
             <line s="you">
                        No idea.
             </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
             <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
             </line>
@@ -701,6 +1243,10 @@
           <line s="t">
                         She then starts to give you a blowjob under the table.
           </line>
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
           <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
           </line>
@@ -717,6 +1263,8 @@
           <line s="t">
                         She then starts to give you a blowjob under the table.
           </line>
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
           <line s="t">
                   The demo ends here. Please purchase the full game, which contains over 75 different endings, 15 models, and fully uncensored scenes.
           </line>
