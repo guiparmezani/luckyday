@@ -63,7 +63,7 @@
             <image src="assets/images/cop22.jpg" name="cop22" />
             <image src="assets/images/cop23.jpg" name="cop23" />
             <image src="assets/images/cop24.jpg" name="cop24" />
-            <image src="assets/images/cop26.jpg" name="cop25" />
+            <image src="assets/images/cop26.jpg" name="cop26" />
             <image src="assets/images/cop27.jpg" name="cop27" />
 
             <image src="assets/images/nh7.jpg" name="nh7" />
@@ -113,6 +113,9 @@
     </character>
     <character name="b" textbox="tb_main">
       <displayname>Nikki</displayname>
+    </character>
+    <character name="boy" textbox="tb_main">
+      <displayname>Delivery Boy</displayname>
     </character>
     <character name="t" textbox="tb_main">
       <displayname>Narrator</displayname>
@@ -229,7 +232,7 @@
      </line> 
      <set asset="game" image="nh23c" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       You realize she is not wearing panties under her skirt.
      </line> 
      <goto scene="watching" />
@@ -262,8 +265,8 @@
      </line> 
      <set asset="game" image="nh23c" duration="0" />
      <show asset="game" />
-     <line s="t">.
-      You realize she is not wearing panties under her skirt.
+     <line s="t">
+       You realize she is not wearing panties under her skirt.
      </line> 
      <goto scene="watching" />
     </scene>
@@ -271,7 +274,7 @@
     <scene id="watching">  
      <set asset="game" image="nh21" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       She sits on the couch and you two start watching the movie.
      </line>       
      <choice>
@@ -283,23 +286,23 @@
     <scene id="layonlap">
      <set asset="game" image="nh42" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       She lays her head on your lap.
      </line>            
-     <line s="t">.
+     <line s="t">
       You start to get an unexpected boner.
      </line>      
      <choice>          
-           <option label="Let your boner rise on its full glory" scene="boner"></option>
+           <option label="Let your boner rise in its full glory" scene="boner"></option>
            <option label="Think about something else to make the boner go away." scene="boneraway"></option>
      </choice>
     </scene>
 
     <scene id="boner">
-     <line s="t">.
+     <line s="t">
       Nikki feels your boner poking her.
      </line>                
-     <line s="b">.
+     <line s="b">
       Is that what I think it is?
      </line>                
      <choice>          
@@ -313,10 +316,10 @@
     <scene id="ohisee">
      <set asset="game" image="nh25" duration="0" />
      <show asset="game" />
-     <line s="b">.
+     <line s="b">
       Oh, I see. I got scared there for a moment.
      </line>
-     <line s="t">.
+     <line s="t">
       You start feeling the urge to go to the restroom.
      </line>                
      <choice>
@@ -328,22 +331,22 @@
     <scene id="bj">
      <set asset="game" image="nh43" duration="0" />
      <show asset="game" />
-     <line s="b">.
+     <line s="b">
       I'll do something about it.
      </line>      
      <set asset="game" image="nh45" duration="0" />
      <show asset="game" />     
-     <line s="t">.
+     <line s="t">
       She grabs your cock and gives you a blowjob.
      </line>      
      <set asset="game" image="nh44" duration="0" />
      <show asset="game" />     
-     <line s="b">.
+     <line s="b">
       Come with me, let's go to my bedroom.
      </line>           
      <set asset="game" image="nh28" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       She pulls you with her.
      </line>           
      <goto scene="credits" />
@@ -352,35 +355,35 @@
     <scene id="gayboner">
      <set asset="game" image="nh48" duration="0" />
      <show asset="game" />
-     <line s="b">.
+     <line s="b">
       Wait, you're gay?
      </line>           
-     <line s="you">.
+     <line s="you">
       Sorry I haven't told you before.
      </line>      
      <set asset="game" image="nh28" duration="0" />
      <show asset="game" />     
-     <line s="b">.
+     <line s="b">
       If you don't mind... I have an idea. Come with me, I always wanted to try something.
      </line>      
      <set asset="game" image="nh7" duration="0" />
      <show asset="game" />     
-     <line s="t">.
+     <line s="t">
        Nikki takes you to the shower. She fingers your butthole, stimulating your prostate.
      </line>      
      <set asset="game" image="nh8" duration="0" />
      <show asset="game" />     
-     <line s="t">.
+     <line s="t">
        You end up sleeping by her side having doubts about your sexuality.
      </line>           
      <goto scene="credits" />
     </scene>
 
     <scene id="boneraway">
-     <line s="t">.
+     <line s="t">
        You remember how lame were the star wars prequels. The boner goes away imediately.
      </line>                
-     <line s="t">.
+     <line s="t">
       You start feeling the urge to go to the restroom.
      </line>                
      <choice>
@@ -392,10 +395,10 @@
     <scene id="holdnikki">
      <set asset="game" image="nh25" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       You hold her close to you.
      </line>                
-     <line s="t">.
+     <line s="t">
       You start feeling the urge to go to the restroom.
      </line>                
      <choice>
@@ -407,13 +410,13 @@
     <scene id="farts">
      <set asset="game" image="nh57" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       You can't hold any longer and start farting uncontrollably.
      </line>                
-     <line s="b">.
+     <line s="b">
       Ew, you're disgusting. You ruined the mood!
      </line>
-     <line s="t">.
+     <line s="t">
       She kicks you out and never talks to you again.
      </line>
      <goto scene="credits" />
@@ -422,15 +425,15 @@
     <scene id="restroom">
      <set asset="game" image="nh26" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       You go to the restroom and take an epic shit.
      </line>
      <set asset="game" image="nh26b" duration="0" />
      <show asset="game" />
-     <line s="t">.
+     <line s="t">
       You then realize the flusher is not working.
      </line>
-     <line s="t">.
+     <line s="t">
       How will you get out of this situation?
      </line>
      <goto scene="credits" />
@@ -569,7 +572,7 @@
      <set asset="game" image="nh53" duration="0" />
      <show asset="game" />
      <line s="t">
-       Nikki pays for the pizza and give decide to give the delivery boy a glimpse.
+       Nikki pays for the pizza and decide to give the delivery boy a litthe flash.
      </line>
      <set asset="game" image="nh54" duration="0" />
      <show asset="game" />
@@ -710,7 +713,7 @@
              <choice>
               <option label="-I'm really sorry about that." scene="obbeycop3"></option>
               <option label="-I love women giving me orders." scene="boring"></option>
-              <option label="-I could't control myself." scene="obbeycop3"></option>
+              <option label="-I couldn't control myself." scene="obbeycop3"></option>
              </choice>
              <scene id="obbeycop3">
               <set asset="game" image="cop23" duration="0" />

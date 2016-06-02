@@ -27,7 +27,7 @@
 
           $('.generic-full-profile .generic-image-src').attr('src', clickedElement.find('.generic-image-src').text());
           $('.generic-full-profile .generic-name').text(clickedElement.find('.generic-name').text());
-          $('.generic-full-profile .generic-content').text(clickedElement.find('.generic-content').text());
+          $('.generic-full-profile .generic-content').text(clickedElement.find('.generic-content.hidden').text());
 
           $('.buy-it-section .stripe-games').each(function(){
             if ($(this).hasClass(clickedElement.find('.generic-card').attr('id'))) {
