@@ -5,7 +5,7 @@
 ?>
 <?php 
 $home_en = pll_get_post(4, 'en');
-$home_pt = pll_get_post(4, 'pt');
+$home_pt = pll_get_post(143, 'pt');
 
 $link_en = get_page_link($home_en); // WP function
 $link_pt = get_page_link($home_pt); // WP function

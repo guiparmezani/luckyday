@@ -110,7 +110,7 @@
 							      <div class="generic-content">
 								      <h4 class="generic-name"><?php the_sub_field('game_name'); ?></h4>
 								      <hr class="divider center">
-								      <p class="generic-excerpt"><?php the_sub_field('game_description'); ?></p>
+								      <p class="generic-excerpt"><?php if(pll_current_language() === 'en') the_sub_field('game_description'); else the_sub_field('game_description_pt_br');?></p>
 								      <div class="game-price hidden"><?php the_sub_field('game_price') ?></div>
 							      </div>
 							      <div class="generic-card-rollover-block">
