@@ -1,6 +1,15 @@
+<?php 
+$home_en = pll_get_post(4, 'en');
+$home_pt = pll_get_post(143, 'pt');
+
+$link_en = get_page_link($home_en); // WP function
+$link_pt = get_page_link($home_pt); // WP function
+
+?>
+
 <header class="banner">
   <div class="container">
-    <a class="brand" href="<?= get_page_link(pll_get_post(4, pll_current_language())); ?>"><img src="<?php echo bloginfo('template_url') . '/assets/images/header-logo.jpg'; ?>"></a>
+    <a class="brand" href="<?php if(pll_current_language() === 'en') echo $home_en; else echo $home_pt;?>"><img src="<?php echo bloginfo('template_url') . '/assets/images/header-logo.jpg'; ?>"></a>
     <nav class="nav-primary">
       <?php
       if (has_nav_menu('primary_navigation')) :
