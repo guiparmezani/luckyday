@@ -9,7 +9,7 @@ $link_pt = get_page_link($home_pt); // WP function
 
 <header class="banner">
   <div class="container">
-    <a class="brand" href="<?php if(pll_current_language() === 'en') echo $home_en; else echo $home_pt;?>"><img src="<?php echo bloginfo('template_url') . '/assets/images/header-logo.jpg'; ?>"></a>
+    <a class="brand" href="<?php if(pll_current_language() === 'en') echo $link_en; else echo $link_pt;?>"><img src="<?php echo bloginfo('template_url') . '/assets/images/header-logo.jpg'; ?>"></a>
     <nav class="nav-primary">
       <?php
       if (has_nav_menu('primary_navigation')) :
