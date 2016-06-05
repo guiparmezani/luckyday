@@ -7,7 +7,11 @@
 <?php if(isset($_GET['purchased'])): ?>
 	<?php while(have_rows('games', 'options')): the_row(); ?>
 		<?php if (sanitize_title($_GET['purchased']) === sanitize_title(get_sub_field('game_name'))): ?>
-			<iframe width="1" height="1" frameborder="0" src="<?php the_sub_field('game_file'); ?>"></iframe>
+			<?php if(pll_current_language() === 'en') : ?>
+				<iframe width="1" height="1" frameborder="0" src="<?php the_sub_field('game_file'); ?>"></iframe>
+			<?php else: ?>
+				<iframe width="1" height="1" frameborder="0" src="<?php the_sub_field('game_file_pt'); ?>"></iframe>
+			<?php endif; ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>

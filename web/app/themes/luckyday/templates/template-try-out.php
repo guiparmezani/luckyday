@@ -18,11 +18,13 @@
 	<section class="try-out-section section-template">
 		<div class="container">
 			<div class="game-block">
-				<iframe src="/lucky-day-demo"></iframe>
-				<br><br>
 				<?php if (pll_current_language() === 'en'): ?>
 					<a href="/buy-it" class="btn btn-brand">But it Now</a>
+					<iframe src="/lucky-day-demo"></iframe>
+					<br><br>
 				<?php else: ?>
+					<iframe src="/lucky-day-demo-pt"></iframe>
+					<br><br>
 					<a href="/compre-o-jogo" class="btn btn-brand">Compre Agora</a>
 				<?php endif ?>
 			</div>
