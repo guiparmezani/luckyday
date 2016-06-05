@@ -183,6 +183,8 @@
     </scene>
 
     <scene id="movie">
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
      <line s="b">
       So, what kind of movies do you like?
      </line> 
@@ -215,8 +217,15 @@
      <choice>
            <option label="-I'll go and check." scene="grabmovie"></option>
            <option label="-Let's call 911!" scene="keepwatching1"></option>
-           <option label="-It's nothing, let's keep watching the movie." scene="eww"></option>
+           <option label="-It's nothing, let's keep watching the movie." scene="holdnikki"></option>
      </choice>
+    </scene>
+
+    <scene id="keepwatching1"> 
+     <line s="b">
+      I think it's just my cat. Let's keep wathing the movie.
+     </line>        
+     <goto scene="holdnikki" />
     </scene>
 
     <scene id="eww">
@@ -293,7 +302,7 @@
       You start to get an unexpected boner.
      </line>      
      <choice>          
-           <option label="Let your boner rise in its full glory" scene="boner"></option>
+           <option label="Let your boner rise in its full glory." scene="boner"></option>
            <option label="Think about something else to make the boner go away." scene="boneraway"></option>
      </choice>
     </scene>
@@ -599,7 +608,7 @@
      <set asset="game" image="nh50" duration="0" />
      <show asset="game" />
      <line s="t">
-       You pull her towel, surpring both her and the delivery boy.
+       You pull her towel, surprising both her and the delivery boy.
      </line>     
      <set asset="game" image="nh51" duration="0" />
      <show asset="game" /> 
@@ -681,7 +690,7 @@
            </line>             
            <choice>
             <option label="Obbey." scene="obbeycop2"></option>
-            <option label="Refuse to obbey." scene="refusecop"></option>
+            <option label="Ask if that isn't against the law." scene="refusecop"></option>
             <option label="Try to escape." scene="escapecop"></option>
            </choice>
            <scene id="obbeycop2">
@@ -903,12 +912,11 @@
         <line s="t">
                     The library is very quiet.
         </line>
-
         <set asset="game" image="lib2" duration="0" />
         <show asset="game" />
         <line s="you">
                     Let's grab our book.
-                </line>
+        </line>
         <set asset="game" image="lib3" duration="0" />
         <show asset="game" />
         <line s="s">
@@ -935,8 +943,8 @@
                     You're too heavy and enp up falling over her.
           </line>
           <line s="s">
-                    See? I knew this would happen!
-                  </line>
+                See? I knew this would happen!
+          </line>
           <line s="you">
                     Sorry. At least I got the book.
           </line>
