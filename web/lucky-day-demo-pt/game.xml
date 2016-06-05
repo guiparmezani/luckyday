@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ws>
+  <settings>
+    <stage width="960px" height="640px" create="yes" center="yes" />
+  </settings>
+  <assets>
+
+    <imagepack name="game" x="0" y="0" z="20">
+            <image src="assets/images/intro.jpg" name="intro" />
+            <image src="assets/images/lib1.JPG" name="lib1" />
+            <image src="assets/images/lib2.JPG" name="lib2" />
+            <image src="assets/images/lib3.jpg" name="lib3" />
+            <image src="assets/images/lib4.jpg" name="lib4" />
+            <image src="assets/images/lib5.JPG" name="lib5" />
+            <image src="assets/images/lib6.JPG" name="lib6" />
+            <image src="assets/images/lib7.jpg" name="lib7" />
+            <image src="assets/images/lib10.jpg" name="lib10" />
+            <image src="assets/images/lib12.jpg" name="lib12" />
+            <image src="assets/images/lib13.JPG" name="lib13" />
+            <image src="assets/images/lib14.JPG" name="lib14" />
+            <image src="assets/images/lib16.JPG" name="lib16" />
+            <image src="assets/images/lib17.JPG" name="lib17" />
+            <image src="assets/images/lib18.jpg" name="lib18" />
+            <image src="assets/images/lib19.JPG" name="lib19" />
+            <image src="assets/images/lib23.jpg" name="lib23" />
+            <image src="assets/images/lib24.jpg" name="lib24" />
+            <image src="assets/images/lib25.jpg" name="lib25" />
+            <image src="assets/images/lib27.jpg" name="lib27" />
+            <image src="assets/images/lib28.jpg" name="lib28" />
+            <image src="assets/images/lib30.JPG" name="lib30" />
+            <image src="assets/images/lib31.JPG" name="lib31" />
+            <image src="assets/images/lib32.JPG" name="lib32" />
+            <image src="assets/images/lib33.JPG" name="lib33" />
+            <image src="assets/images/lib34.JPG" name="lib34" />
+            <image src="assets/images/lib35.JPG" name="lib35" />
+            <image src="assets/images/lib36.JPG" name="lib36" />
+            <image src="assets/images/lib37.JPG" name="lib37" />
+            <image src="assets/images/lib38.JPG" name="lib38" />
+            <image src="assets/images/lib39.JPG" name="lib39" />
+            <image src="assets/images/lib40.JPG" name="lib40" />
+            <image src="assets/images/lib40a.JPG" name="lib40a" />
+            <image src="assets/images/lib40b.JPG" name="lib40b" />
+            <image src="assets/images/lib40c.JPG" name="lib40c" />
+
+            <image src="assets/images/cop3.jpg" name="cop3" />
+            <image src="assets/images/cop4.jpg" name="cop4" />
+            <image src="assets/images/cop5.jpg" name="cop5" />
+            <image src="assets/images/cop6.jpg" name="cop6" />
+            <image src="assets/images/cop7.jpg" name="cop7" />
+            <image src="assets/images/cop8.jpg" name="cop8" />
+            <image src="assets/images/cop9.jpg" name="cop9" />
+            <image src="assets/images/cop10.jpg" name="cop10" />
+            <image src="assets/images/cop11.jpg" name="cop11" />
+            <image src="assets/images/cop12.jpg" name="cop12" />
+            <image src="assets/images/cop13.jpg" name="cop13" />
+            <image src="assets/images/cop14.jpg" name="cop14" />
+            <image src="assets/images/cop15.jpg" name="cop15" />
+            <image src="assets/images/cop16.jpg" name="cop16" />
+            <image src="assets/images/cop17.jpg" name="cop17" />
+            <image src="assets/images/cop18.jpg" name="cop18" />
+            <image src="assets/images/cop19.jpg" name="cop19" />
+            <image src="assets/images/cop20.jpg" name="cop20" />
+            <image src="assets/images/cop22.jpg" name="cop22" />
+            <image src="assets/images/cop23.jpg" name="cop23" />
+            <image src="assets/images/cop24.jpg" name="cop24" />
+            <image src="assets/images/cop26.jpg" name="cop26" />
+            <image src="assets/images/cop27.jpg" name="cop27" />
+
+            <image src="assets/images/nh7.jpg" name="nh7" />
+            <image src="assets/images/nh8.jpg" name="nh8" />
+            <image src="assets/images/nh9.jpg" name="nh9" />
+            <image src="assets/images/nh10.jpg" name="nh10" />
+            <image src="assets/images/nh11.jpg" name="nh11" />
+            <image src="assets/images/nh12.jpg" name="nh12" />
+            <image src="assets/images/nh13.jpg" name="nh13" />
+            <image src="assets/images/nh17.jpg" name="nh17" />
+            <image src="assets/images/nh20.jpg" name="nh20" />
+            <image src="assets/images/nh20b.jpg" name="nh20b" />
+            <image src="assets/images/nh21.jpg" name="nh21" />
+            <image src="assets/images/nh23a.jpg" name="nh23a" />
+            <image src="assets/images/nh23b.jpg" name="nh23b" />
+            <image src="assets/images/nh23c.jpg" name="nh23c" />
+            <image src="assets/images/nh25.jpg" name="nh25" />
+            <image src="assets/images/nh26.jpg" name="nh26" />
+            <image src="assets/images/nh26b.jpg" name="nh26b" />
+            <image src="assets/images/nh28.jpg" name="nh28" />
+            <image src="assets/images/nh40b.jpg" name="nh40b" />
+            <image src="assets/images/nh42.jpg" name="nh42" />
+            <image src="assets/images/nh43.jpg" name="nh43" />
+            <image src="assets/images/nh44.jpg" name="nh44" />
+            <image src="assets/images/nh45.jpg" name="nh45" />
+            <image src="assets/images/nh46.jpg" name="nh46" />
+            <image src="assets/images/nh46b.jpg" name="nh46b" />
+            <image src="assets/images/nh47.JPG" name="nh47" />
+            <image src="assets/images/nh48.JPG" name="nh48" />
+            <image src="assets/images/nh49.JPG" name="nh49" />
+            <image src="assets/images/nh50.JPG" name="nh50" />
+            <image src="assets/images/nh51.JPG" name="nh51" />
+            <image src="assets/images/nh52.JPG" name="nh52" />
+            <image src="assets/images/nh53.JPG" name="nh53" />
+            <image src="assets/images/nh54.JPG" name="nh54" />
+            <image src="assets/images/nh57.jpg" name="nh57" />
+
+            <image src="assets/images/title.JPG" name="title" />
+    </imagepack>
+
+
+    <character name="you" textbox="tb_main">
+      <displayname>You</displayname>
+    </character>
+    <character name="s" textbox="tb_main">
+      <displayname>Sarah</displayname>
+    </character>
+    <character name="b" textbox="tb_main">
+      <displayname>Nikki</displayname>
+    </character>
+    <character name="boy" textbox="tb_main">
+      <displayname>Delivery Boy</displayname>
+    </character>
+    <character name="t" textbox="tb_main">
+      <displayname>Narrator</displayname>
+    </character>
+    <character name="c" textbox="tb_main">
+      <displayname>Claire</displayname>
+    </character>
+    <character name="cop" textbox="tb_main">
+      <displayname>Cop</displayname>
+    </character>
+    <textbox name="tb_main" width="890px" height="100px" x="5px" y="355px" namebox="yes" speed="80">
+      <nameTemplate>{name}</nameTemplate>
+    </textbox>
+  </assets>
+
+  <scenes>
+    <scene id="start">
+     <show asset="tb_main" />
+     <line s="t">
+      Essa pequena demo contêm 3 cenas do jogo, adaptadas e fora de contexto para apresentar um pouco da experiência completa.
+     </line>
+     <choice>
+        <option label="Jogar a cena da biblioteca." scene="lib"></option>
+        <option label="Jogar a cena da casa da Nikki." scene="nikki"></option>
+        <option label="Jogar a cena da prisão." scene="jail"></option>
+     </choice>
+    </scene>
+
+    <scene id="nikki">
+     
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <show asset="tb_main" />
+     <line s="t">
+      Nikki vem do banho enrolada em sua toalha.
+     </line> 
+     <line s="b">
+      Por que você não pede uma pizza enquanto me visto?
+     </line> 
+     <choice>
+           <option label="Espere Nikki se vestir." scene="movie"></option>
+           <option label="Se ofereça para preparar algo." scene="cook"></option>
+           <option label="Desafie ela a atender o entregador de pizzas nua." scene="noway"></option>
+           <option label="Desafie ela a atender o entregador de pizzas enrolada na toalha." scene="towel"></option>
+     </choice>
+    </scene>
+
+    <scene id="noway">
+     <set asset="game" image="nh52" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Isso seria loucura!
+     </line> 
+     <set asset="game" image="nh47" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Vou me vestir. Por que não assistimos um filme quando voltar?
+     </line> 
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+        Nikki vem do quarto já vestida.
+     </line> 
+     <goto scene="movie" />
+    </scene>
+
+    <scene id="movie">
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Então... Que tipo de filme você quer assistir?
+     </line> 
+     <choice>
+           <option label="Romance." scene="grabmovie"></option>
+           <option label="Comedia." scene="grabmovie"></option>
+           <option label="Porno japonês com tentáculos." scene="eww"></option>
+           <option label="Terror." scene="grabmovie2"></option>
+     </choice>
+    </scene>
+
+    <scene id="grabmovie">
+     <set asset="game" image="nh21" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Não é realmente meu estilo de filme, mas tudo bem.
+     </line> 
+     <goto scene="didyouhear" />
+    </scene>
+
+    <scene id="didyouhear">
+     <line s="t">
+      Enquanto assistiam ao filme, você escuta um barulho vindo da cozinha.
+     </line> 
+     <set asset="game" image="nh25" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Você ouviu isso? Estou com medo.
+     </line> 
+     <choice>
+           <option label="-Vou verificar." scene="grabmovie"></option>
+           <option label="-Vamos chamar a policia!" scene="keepwatching1"></option>
+           <option label="-Não é nada, vamos continuar assistindo ao filme." scene="holdnikki"></option>
+     </choice>
+    </scene>
+
+    <scene id="keepwatching1"> 
+     <line s="b">
+      Deve ser meu gato. Vamos continuar assistindo ao filme.
+     </line>        
+     <goto scene="holdnikki" />
+    </scene>
+
+    <scene id="eww">
+     <set asset="game" image="nh23a" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Está falando sério? Pare de brincadeiras, acho que tenho alguns filmes aqui...
+     </line> 
+     <set asset="game" image="nh23b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Nikki se inclina para pegar a caixa de DVDs.
+     </line> 
+     <set asset="game" image="nh23c" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Você percebe que ela não está usando calcinha.
+     </line> 
+     <goto scene="watching" />
+    </scene>
+
+    <scene id="grabmovie">
+     <set asset="game" image="nh46" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Você vai até a cozinha investigar o barulho.
+     </line> 
+     <set asset="game" image="nh46b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Subitamente alguém te agarra das sombras.
+     </line>
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="grabmovie2">
+     <set asset="game" image="nh23a" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Esse é meu tipo favorito de filme! Acho que tenho um muito bom guardado aqui em baixo.
+     </line>     
+     <set asset="game" image="nh23b" duration="0" />
+     <show asset="game" />  
+     <line s="t">
+      Nikki se inclina para pegar a caixa de DVDs.
+     </line> 
+     <set asset="game" image="nh23c" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Você percebe que ela não está usando calcinha.
+     </line> 
+     <goto scene="watching" />
+    </scene>
+
+    <scene id="watching">  
+     <set asset="game" image="nh21" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Ela senta no sofá e vocês começam a assistir ao filme.
+     </line>       
+     <choice>
+           <option label="Pergunta se ela quer deitar no seu colo." scene="layonlap"></option>
+           <option label="Abrace ela." scene="holdnikki"></option>
+     </choice>
+    </scene>
+
+    <scene id="layonlap">
+     <set asset="game" image="nh42" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Ela deita a cabeça no seu colo.
+     </line>            
+     <line s="t">
+      Você começa a ter uma ereção inesperada.
+     </line>      
+     <choice>          
+           <option label="Deixe-a subir em toda sua glória." scene="boner"></option>
+           <option label="Pense sobre outra coisa para ereção ir embora." scene="boneraway"></option>
+     </choice>
+    </scene>
+
+    <scene id="boner">
+     <line s="t">
+      Nikki sente algo cutucando ela.
+     </line>                
+     <line s="b">
+      Isso é o que estou pensando?
+     </line>                
+     <choice>          
+           <option label="Sim, é isso mesmo." scene="bj"></option>
+           <option label="É apenas... Meu celular." scene="ohisee"></option>
+           <option label="Não pude me controlar... A atriz desse filme é muito gostosa!" scene="bj"></option>
+           <option label="Não pude me controlar... O ator desse filme é um bofe maravilhoso!" scene="gayboner"></option>
+     </choice>
+    </scene>
+
+    <scene id="ohisee">
+     <set asset="game" image="nh25" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Oh, então é isso. Fiquei assustada por um instante.
+     </line>
+     <line s="t">
+      Você começa a sentir uma forte vontade de ir ao banheiro.
+     </line>                
+     <choice>
+           <option label="Segure a vontade como um campeão." scene="farts"></option>
+           <option label="Peça para usar o banheiro." scene="restroom"></option>
+     </choice>           
+    </scene>
+
+    <scene id="bj">
+     <set asset="game" image="nh43" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Terei que fazer algo sobre isso.
+     </line>      
+     <set asset="game" image="nh45" duration="0" />
+     <show asset="game" />     
+     <line s="t">
+      Ela lhe faz um sexo oral surpresa.
+     </line>      
+     <set asset="game" image="nh44" duration="0" />
+     <show asset="game" />     
+     <line s="b">
+      Venha comigo, vamos para o meu quarto.
+     </line>           
+     <set asset="game" image="nh28" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Ela te puxa pelo braço.
+     </line>           
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="gayboner">
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <line s="b">
+      Espere aí, então você é gay?
+     </line>           
+     <line s="you">
+      Desculpe por não ter contado antes.
+     </line>      
+     <set asset="game" image="nh28" duration="0" />
+     <show asset="game" />     
+     <line s="b">
+      Se você não se importar, eu tenho uma ideia... Sempre quis tentar algo...
+     </line>      
+     <set asset="game" image="nh7" duration="0" />
+     <show asset="game" />     
+     <line s="t">
+       Nikki leva você para o banho. Ela faz um fio terra em você, estimulando sua prostata.
+     </line>      
+     <set asset="game" image="nh8" duration="0" />
+     <show asset="game" />     
+     <line s="t">
+       Você termina dormindo ao lado dela, tendo dúvidas sobre sua sexualidade.
+     </line>           
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="boneraway">
+     <line s="t">
+       Você se lembra de como a nova trilogia de Star Wars foi horrível e perde o tesão imediatamente.
+     </line>                
+     <line s="t">
+      Você passa a sentir vontade de ir ao banheiro.
+     </line>                
+     <choice>
+           <option label="Segure a vontade como um campeão." scene="farts"></option>
+           <option label="Peça para usar o banheiro." scene="restroom"></option>
+     </choice>
+    </scene>
+
+    <scene id="holdnikki">
+     <set asset="game" image="nh25" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Você a envolve com seus braços.
+     </line>                
+     <line s="t">
+      Você então passa a sentir vontade de ir ao banheiro.
+     </line>                
+     <choice>
+           <option label="Segure a vontade como um campeão." scene="farts"></option>
+           <option label="Peça para usar o banheiro." scene="restroom"></option>
+     </choice>
+    </scene>
+
+    <scene id="farts">
+     <set asset="game" image="nh57" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Você não consegue mais segurar e deixa escapar um peido
+     </line>                
+     <line s="b">
+      Ew, você é nojento. Arruinou todo clima!
+     </line>
+     <line s="t">
+      Ela chuta você para fora da casa dela e vocês nunca mais se falam.
+     </line>
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="restroom">
+     <set asset="game" image="nh26" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Você vai ao banheiro e dá uma cagada épica.
+     </line>
+     <set asset="game" image="nh26b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+      Mas então percebe que a descarga não está funcionando.
+     </line>
+     <line s="t">
+      Como você vai sair dessa situação?
+     </line>
+     <goto scene="credits" />
+    </scene> 
+
+    <scene id="cook">
+     <line s="you">
+       Deixa comigo, vou preparar algo para nós comermos.
+     </line>        
+     <set asset="game" image="nh46" duration="0" />
+     <show asset="game" />
+     <line s="t">
+          Você vai até a cozinha preparar algo enquanto Nikki se troca.
+     </line> 
+     <set asset="game" image="nh13" duration="0" />
+     <show asset="game" />
+     <line s="t">
+         Você bota o óleo para esquentar.
+     </line> 
+     <set asset="game" image="nh10" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Um gatinho se aproxima e começa a miar.
+     </line> 
+     <choice>
+           <option label="Fazer carinho no gato." scene="petcat"></option>
+           <option label="Chutar o gato." scene="kickcat"></option>
+           <option label="Ignorar o gato e continuar cozinhando." scene="cook2"></option>
+     </choice>
+    </scene>
+
+    <scene id="cook2">
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Hey! Isso está com um cheiro bom. Por que não comemos e depois assistimos um filme?
+     </line> 
+     <goto scene="movie"/>
+    </scene>
+
+    <scene id="petcat"> 
+     <set asset="game" image="nh12" duration="0" />
+     <show asset="game" />
+     <line s="you">
+        Olá Sr. Gatinho, como vai você?
+     </line> 
+     <set asset="game" image="nh9" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Quando você se dá conta, a frigideira está em chamas.
+     </line>
+     <set asset="game" image="nh17" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Você escapa da casa com vida, mas Nikki morre no incêndio.
+     </line>            
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="kickcat"> 
+     <set asset="game" image="nh11" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Você chuta o gato para longe.
+     </line>
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Nikki vem do quarto já vestida.
+     </line>
+     <line s="you">
+       O bacon está pronto!
+     </line>
+     <line s="b">
+        Ótimo! Traga para a sala de TV.
+     </line>
+     <set asset="game" image="nh20b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       O gato então decide se vingar e pula no seu rosto com suas garras afiadas.
+     </line>
+     <line s="you">
+       Tire essa besta de cima de mim!
+     </line>
+     <set asset="game" image="nh40b" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Você cai no chão.
+     </line>
+     <goto scene="credits" />
+    </scene>
+
+    <scene id="noway">
+     <set asset="game" image="nh52" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Não! Eu teria que estar muito bêbada para fazer algo assim.
+     </line>
+     <set asset="game" image="nh47" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Vou me vestir. Podemos comer e depois assistir um filme.
+     </line>
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+        Nikki vem do quarto já vestida.
+     </line> 
+     <goto scene="movie" />
+    </scene>
+
+    <scene id="towel">
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Está bem, isso vai ser divertido! Fique por perto caso ele tente algo.
+     </line>
+     <set asset="game" image="nh49" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       O entregador chega.
+     </line>
+     <line s="b">
+       Oi! Me desculpe, eu estava saindo do banho...
+     </line>
+     <line s="boy">
+       Wow! Sem problema. Está um dia muito quente, não é mesmo?
+     </line>
+     <choice>
+           <option label="Espere Nikki pagar pela pizza." scene="pizzapay"></option>
+           <option label="Puxe a toalha da Nikki." scene="pulltowel"></option>
+     </choice>
+    </scene>
+
+    <scene id="pizzapay">
+     <set asset="game" image="nh53" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Nikki paga pela pizza e decide dar um outro tipo de gorjeta para o entregador.
+     </line>
+     <set asset="game" image="nh54" duration="0" />
+     <show asset="game" />
+     <line s="boy">
+       Wow, obrigado.
+     </line>
+     <set asset="game" image="nh48" duration="0" />
+     <show asset="game" />
+     <line s="b">
+       Isso foi tão divertido! Você viu a cara dele? Haha.
+     </line>
+     <line s="b">
+       Vou me vestir. Podemos assistir um filme depois de comermos.
+     </line>
+     <set asset="game" image="nh20" duration="0" />
+     <show asset="game" />
+     <line s="t">
+        Nikki volta do quarto já vestida.
+     </line> 
+     <goto scene="movie" />
+    </scene>
+
+    <scene id="pulltowel">
+     <set asset="game" image="nh50" duration="0" />
+     <show asset="game" />
+     <line s="t">
+       Você puxa a toalha dela, suYou pull her towel, surpreendendo ela e o entregador.
+     </line>     
+     <set asset="game" image="nh51" duration="0" />
+     <show asset="game" /> 
+     <line s="t">
+       Ela se cobre com as mãos.
+     </line>     
+     <line s="boy">
+       Err... Eu vou deixar a pizza aqui e ir embora.
+     </line>     
+     <set asset="game" image="nh52" duration="0" />
+     <show asset="game" />  
+     <line s="b">
+       Seu cuzão! Por que fez isso? Você me deixou envergonhada!
+     </line>      
+     <line s="you">
+       Ao menos conseguimos pizza de graça.
+     </line>      
+     <line s="b">
+       Caia fora daqui!
+     </line>                        
+     <goto scene="credits" />
+    </scene>                  
+
+    <scene id="credits">
+     <set asset="game" image="title" duration="0" />
+     <show asset="game" />  
+     <line s="t">
+          A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+     </line>
+     <restart /> 
+    </scene>                  
+
+    <scene id="jail">
+
+        <set asset="game" image="cop18" duration="0" />
+        <show asset="game" />
+
+        <line s="t">
+           Você é levado para a sala de interrogatório.
+        </line>
+        <choice>
+           <option label="Peça para ela retirar suas algemas." scene="cop"></option>
+           <option label="Jure que não sabe de nada." scene="cop"></option>
+           <option label="Peça por um advogado." scene="cop"></option>
+        </choice>
+        <scene id="cop">
+         <set asset="game" image="cop15" duration="0" />
+         <show asset="game" />
+         <line s="cop">
+            Cale-se, eu dou as ordens aqui!
+         </line>
+         <set asset="game" image="cop22" duration="0" />
+         <show asset="game" />
+         <line s="t">
+            Ela dá um tapa no seu rosto.
+         </line>
+         <goto scene="floor" />
+        </scene>
+      </scene>
+        <scene id="floor">
+          <set asset="game" image="cop20" duration="0" />
+          <show asset="game" />
+          <line s="cop">
+            Vá para o chão feito o cão sujo que você é!
+          </line>
+          <choice>
+           <option label="Obedecer." scene="obbeycop"></option>
+           <option label="Recusar-se a obedecer." scene="refusecop"></option>
+           <option label="Tente escapar." scene="escapecop"></option>
+          </choice>
+          <scene id="obbeycop">
+           <set asset="game" image="cop23" duration="0" />
+           <show asset="game" />
+           <line s="t">
+            Você se ajoelha no chão.
+           </line>
+           <line s="cop">
+             Agora beije meus pés.
+           </line>             
+           <choice>
+            <option label="Obedecer." scene="obbeycop2"></option>
+            <option label="Perguntar se isso está dentro da lei." scene="refusecop"></option>
+            <option label="Tente escapar." scene="escapecop"></option>
+           </choice>
+           <scene id="obbeycop2">
+             <set asset="game" image="cop6" duration="0" />
+             <show asset="game" />
+             <line s="t">
+              Você tira a bota dela...
+             </line>
+             <set asset="game" image="cop7" duration="0" />
+             <show asset="game" />
+             <line s="t">
+              E beija seus pés.
+             </line>
+             <set asset="game" image="cop13" duration="0" />
+             <show asset="game" />
+             <line s="cop">
+                   Bom garoto. Agora preciso conferir se você não está armado. Vejamos...
+             </line>
+             <set asset="game" image="cop4" duration="0" />
+             <show asset="game" />
+             <line s="t">
+                   Ela remove suas calças.
+             </line>
+             <set asset="game" image="cop5" duration="0" />
+             <show asset="game" />
+             <line s="cop">
+                   Você está tendo uma ereção! Se explique!
+             </line>
+             <choice>
+              <option label="-Me desculpe sobre isso." scene="obbeycop3"></option>
+              <option label="-Adoro mulheres me dando ordens." scene="boring"></option>
+              <option label="-Não pude me controlar." scene="obbeycop3"></option>
+             </choice>
+             <scene id="obbeycop3">
+              <set asset="game" image="cop23" duration="0" />
+              <show asset="game" />
+              <line s="cop">
+                  Entendi... Você gosta da vista, não é mesmo?
+              </line>                         
+              <choice>
+               <option label="-Sim, madame!" scene="boring"></option>
+               <option label="-Não sou digno de olhar!" scene="obbeycop4"></option>
+               <option label="-Por favor, me deixe ir!" scene="obbeycop4"></option>
+              </choice>
+              <scene id="boring">
+                 <set asset="game" image="cop17" duration="0" />
+                 <show asset="game" />
+                 <line s="cop">
+                   Você está gostando? Seu pervertido! Saia já daqui!
+                 </line>
+                 <set asset="game" image="cop19" duration="0" />
+                 <show asset="game" />
+                 <line s="t">
+                   Ao menos você está livre agora.
+                 </line>
+                 <set asset="game" image="title" duration="0" />
+                 <show asset="game" />  
+                 <line s="t">
+                              A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+                 </line>
+                 <restart />
+              
+              </scene>
+              <scene id="obbeycop4">
+               <line s="cop">
+                   Uma pena! Nem pense em encostar os dedos em mim.
+               </line>
+               <line s="cop">
+                   Mas vou deixar você remover minha calcinha com sua boca. Faça isso, cachorrinho!
+               </line>
+               <choice>
+                <option label="Obedecer." scene="obbeycop5"></option>
+                <option label="Recusar-se a obedecer." scene="refusecop"></option>
+                <option label="Tentar escapar." scene="escapecop"></option>
+               </choice>
+              </scene>
+              <scene id="obbeycop5">
+               <set asset="game" image="cop11" duration="0" />
+               <show asset="game" />                
+               <line s="t">
+                  Você remove a calcinha dela com a boca.
+               </line>
+               <set asset="game" image="cop9" duration="0" />
+               <show asset="game" />                
+               <line s="cop">
+                  Agora, abra a boquinha!
+               </line>
+               <line s="t">
+                  Ela sufoca você com a calcinha dela.
+               </line>
+               <set asset="game" image="cop27" duration="0" />
+               <show asset="game" />                
+               <line s="you">
+                Espere, para onde ela foi?
+               </line>
+               <choice>
+                <option label="Use a oportunidade para escapar." scene="escape"></option>
+                <option label="Espere ela voltar." scene="waitcop"></option>
+               </choice>
+              </scene>
+               <scene id="waitcop">
+                <set asset="game" image="cop26" duration="0" />
+                <show asset="game" />                
+                <line s="t">
+                 Ela volta completamente nua.
+                </line>
+                <line s="cop">
+                 Agora vamos para a segunda parte...
+                </line>
+                <set asset="game" image="title" duration="0" />
+                <show asset="game" />  
+                <line s="t">
+                                 A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+                </line>
+                <restart />                                     
+               </scene>
+             </scene>
+           </scene>
+        </scene>
+      
+          <scene id="refusecop">
+               <set asset="game" image="cop15" duration="0" />
+               <show asset="game" />                
+               <line s="cop">
+                   Como ousa não obedecer minha ordem? Você vai aprender a respeitar minha autoridade!
+               </line>
+               <set asset="game" image="cop16" duration="0" />
+               <show asset="game" />                
+               <line s="t">
+                   Ela bate em você com o cassetete.
+               </line>
+               <set asset="game" image="cop14" duration="0" />
+               <show asset="game" />                
+               <line s="cop">
+                  Vai obedecer minhas ordens daqui pra frente?
+               </line>
+               <choice>
+                <option label="-Sim, me desculpe." scene="floor"></option>
+                <option label="-Não, me recuso a aceitar abuso de poder!" scene="refusecop2"></option>
+               </choice>
+               <scene id="refusecop2">
+                 <line s="cop">
+                   Oh, você quer bancar o durão então?
+                 </line>
+                 <set asset="game" image="cop12" duration="0" />
+                 <show asset="game" />                
+                 <line s="t">
+                  Ela o empurra no chão e retira a calcinha.
+                 </line>
+                 <set asset="game" image="cop10" duration="0" />
+                 <show asset="game" />                
+                 <line s="cop">
+                   Prenda a respiração. 
+                 </line>
+                 <set asset="game" image="cop8" duration="0" />
+                 <show asset="game" />                
+                 <line s="t">
+                   Ela senta no seu rosto até você perder o ar.
+                 </line>
+                 <line s="t">
+                   Você acaba desmaiando.
+                 </line>
+                 <set asset="game" image="title" duration="0" />
+                 <show asset="game" />  
+                 <line s="t">
+                             A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+                 </line>
+                 <restart />
+          </scene>
+              
+          <scene id="escapecop">
+            <set asset="game" image="cop24" duration="0" />
+            <show asset="game" />                
+            <line s="t">
+             Ao tentar escapar, outro policial entra na sala.
+            </line> 
+            <line s="cop">
+              Você está preso por tentar atacar sexualmente uma policial!
+            </line>
+            <line s="you">
+              Espere, eu não fiz nada! Foi ela que...
+            </line>
+            <set asset="game" image="cop3" duration="0" />
+            <show asset="game" />                
+            <line s="t">
+              Você acaba na prisão, onde a policial vem te visitar de tempos em tempos.
+            </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
+            <line s="t">
+                            A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+            </line>
+            <restart />            
+               
+          </scene>
+          <scene id="escape">
+            <set asset="game" image="cop19" duration="0" />
+            <show asset="game" />                
+            <line s="t">
+             Você consegue escapar da sala enquanto a policial estava fora.
+            </line>
+            <line s="you">
+               É melhor eu voltar para a universidade, as garotas devem estar preocupadas.
+            </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
+            <line s="t">
+                            A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+            </line>
+            <restart />
+          </scene>                
+        </scene>
+      
+      <scene id="lib">
+
+        <set asset="game" image="lib1" duration="0" />
+        <show asset="game" />
+        <show asset="tb_main" />
+        <line s="t">
+                A biblioteca está muito quieta.
+        </line>
+        <set asset="game" image="lib2" duration="0" />
+        <show asset="game" />
+        <line s="you">
+            Vamos pegar o livro que precisamos.        
+        </line>
+        <set asset="game" image="lib3" duration="0" />
+        <show asset="game" />
+        <line s="s">
+               Não consigo alcançar. Você pode me ajudar?
+        </line>
+        <choice x="5px" y="355px">
+          <option label="Peça para ela levantar você." scene="lift"></option>
+          <option label="Levante ela." scene="lifther"></option>
+        </choice>
+        <scene id="lift">
+          <set asset="game" image="lib4" duration="0" />
+          <show asset="game" />
+          <line s="s">
+                 Ninguém te ensinou a ser um cavalheiro?
+          </line>
+          <set asset="game" image="lib5" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                  Ela tenta levantar você.
+          </line>
+          <set asset="game" image="lib6" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                 Você é pesado demais e acaba caindo sobre ela.
+          </line>
+          <line s="s">
+                  Vê? Eu sabia que isso aconteceria!
+          </line>
+          <line s="you">
+              Desculpe. Pelo menos pegamos o livro.
+          </line>
+          <goto scene="studyinglib2" />
+        </scene>
+      </scene>
+      <scene id="lifther">
+        <set asset="game" image="lib19" duration="0" />
+        <show asset="game" />        
+        <choice>
+          <option label="Espiar debaixo da sua saia." scene="peek"></option>
+          <option label="Não espiar." scene="studyinglib"></option>
+        </choice>
+        <scene id="peek">
+          <set asset="game" image="lib7" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                 Você dá uma olhadinha debaixo da saia dela
+          </line>
+          <set asset="game" image="lib10" duration="0" />
+          <show asset="game" />
+          <line s="t">
+            Sarah percebe que você está espiando a calcinha dela e fica brava.
+          </line>
+          <line s="s">
+                    Pervertido!
+          </line>
+          <goto scene="studyinglib" />
+        </scene>
+        <scene id="studyinglib">
+          <set asset="game" image="lib12" duration="0" />
+          <show asset="game" />
+          <line s="s">
+                Agora que pegamos o livro, vamos sentar em algum lugar para estudarmos.
+          </line>
+          <goto scene="studyinglib2" />
+        </scene>
+        <scene id="studyinglib2">
+          <set asset="game" image="lib36" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                 Você e Sarah estão estudando quando Claire se aproxima.
+          </line>
+          <line s="c">
+                Hey, eu não sabia que vocês estariam aqui estudando também.
+          </line>
+          <choice>
+            <option label="-Com licença Claire, estamos ocupados agora." scene="excuseclaire"></option>
+            <option label="-Por que não se junta a nós, Claire?" scene="joinclaire"></option>
+          </choice>
+          <scene id="excuseclaire">
+            <set asset="game" image="lib39" duration="0" />
+            <show asset="game" />
+            <line s="c">
+                    Oh, desculpe incomodar o casal. Vou deixar vocês sozinhos.
+            </line>
+            <set asset="game" image="lib13" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                     Você volta a ensinar Sarah sobre a matéria.
+            </line>
+            <choice>
+              <option label="Elogie os esforços dela." scene="compliment"></option>
+              <option label="Toque a mão dela." scene="touchhand"></option>
+            </choice>
+            <scene id="compliment">
+              <set asset="game" image="lib14" duration="0" />
+              <show asset="game" />
+              <line s="s">
+                     Obrigada. Você é muito bom em ensinar.
+              </line>
+              <choice>
+                <option label="-Posso te ensinar muito mais coisas!" scene="sexlib"></option>
+                <option label="-Por que não vamos para outro lugar?" scene="sexlib"></option>
+                <option label="-Eu sou incrível, eu sei." scene="awesome"></option>
+              </choice>
+              <scene id="sexlib">
+                <set asset="game" image="lib16" duration="0" />
+                <show asset="game" />
+                <line s="s">
+                       Venha comigo, eu tenho uma ideia.
+                </line>
+                <set asset="game" image="lib17" duration="0" />
+                <show asset="game" />
+                <line s="t">
+                       Ela leva você para um lugar escondido entre as prateleiras
+                </line>
+                <set asset="game" image="lib18" duration="0" />
+                <show asset="game" />
+                <line s="s">
+                      Quero que você faça sexo comigo, aqui e agora!
+                </line>
+                <choice>
+                  <option label="-Isso é loucura! Alguém pode nos ver!" scene="coward"></option>
+                  <option label="-Você não precisa pedir duas vezes!" scene="sexshelves"></option>
+                </choice>
+                <scene id="coward">
+                  <set asset="game" image="lib4" duration="0" />
+                  <show asset="game" />
+                  <line s="s">
+                        Você é um covarde! Vamos para outro lugar então.                        
+                  </line>
+                  <set asset="game" image="title" duration="0" />
+                  <show asset="game" />  
+                  <line s="t">
+                                A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+                  </line>
+                  <restart />
+                </scene>
+              </scene>
+            </scene>
+          </scene>
+          <scene id="sexshelves">
+            <set asset="game" image="lib23" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                     Vocês começam a se agarrar e tirar as roupas.
+            </line>
+            <set asset="game" image="lib24" duration="0" />
+            <show asset="game" />
+            <line s="s">
+                     Vamos fazer uma loucura.
+            </line>
+            <set asset="game" image="lib25" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                   Vocês tiram as roupas e transam na biblioteca.
+            </line>
+            <set asset="game" image="lib27" duration="0" />
+            <show asset="game" />
+            <line s="s">
+                    Espere, acho que ouvi alguém vindo!
+            </line>
+            <line s="you">
+                   Pegue alguns livros e se cubra, rápido!
+            </line>
+            <set asset="game" image="lib28" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                   Você se Sarah são flagrados e expulsos da biblioteca.
+            </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
+            <line s="t">
+                          A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+            </line>
+            <restart />
+          </scene>
+        </scene>
+        <scene id="touchhand">
+          <set asset="game" image="lib35" duration="0" />
+          <show asset="game" />
+          <line s="s">
+                   Seja honesto comigo, você não me trouxe aqui para estudar, não é mesmo?
+          </line>
+          <choice>
+            <option label="-Na verdade, não. Você me pegou." scene="sexlib"></option>
+            <option label="-Psst, preste atenção nos estudos!" scene="awesome"></option>
+            <option label="-É claro que te trouxe aqui para estudar, para o que mais seria?" scene="awesome"></option>
+          </choice>
+          <scene id="awesome">
+            <set asset="game" image="lib13" duration="0" />
+            <show asset="game" />
+            <line s="s">
+                   Ohh... Que chato...
+            </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
+            <line s="t">
+                            A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+            </line>
+            <restart />
+          </scene>
+        </scene>
+        <scene id="joinclaire">
+          <set asset="game" image="lib37" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                Claire se senta ao lado de Sarah. Sarah não parece muito feliz com isso.
+          </line>
+          <line s="you">
+            Bem, Sarah, vamos continuar...
+          </line>
+          <set asset="game" image="lib38" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                 Claire derruba a caneta debaixo da mesa.
+          </line>
+          <line s="c">
+                     Ops, eu vou pegar.
+          </line>
+          <choice>
+            <option label="Pegue a caneta para ela." scene="grabpen"></option>
+            <option label="Deixe-a pegar a caneta." scene="letgrab"></option>
+          </choice>
+          <scene id="grabpen">
+            <set asset="game" image="lib30" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                   Você vai para debaixo da mesa. Você consegue ver a calcinha da Sarah daí.
+            </line>
+            <choice>
+              <option label="Pegue a caneta e volte para seu lugar." scene="grabsit"></option>
+              <option label="Acaricie as pernas de Sarah." scene="caress"></option>
+              <option label="Toque as pertes íntimas de Sarah." scene="touch"></option>
+            </choice>
+            <scene id="grabsit">
+              <set asset="game" image="lib37" duration="0" />
+              <show asset="game" />
+              <line s="t">
+                     Você pega a caneta e volta para seu lugar.
+              </line>
+              <line s="c">
+                     Você é tão gentil. Por que a gente não sai depois que você terminar aqui?
+              </line>
+              <set asset="game" image="title" duration="0" />
+              <show asset="game" />  
+              <line s="t">
+                            A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+              </line>
+              <restart />
+            </scene>
+          </scene>
+          <scene id="caress">
+            <set asset="game" image="lib31" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                  Você a provoca tocando suas pernas.
+            </line>
+            <set asset="game" image="lib33" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                   Ela discretamente tira a calcinha.
+            </line>
+            <set asset="game" image="lib34" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                   ...E abre as pernas, revelando a buceta para você.
+            </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
+            <line s="t">
+                           A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+            </line>
+            <restart />
+          </scene>
+        </scene>
+        <scene id="touch">
+          <set asset="game" image="lib32" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                 Ela chuta seu nariz, quebrando-o. Você é levado para o hospital.
+          </line>
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
+          <line s="t">
+                         A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+          </line>
+          <restart />
+        </scene>
+        <scene id="letgrab">
+          <set asset="game" image="lib40a" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                Ela vai para debaixo da mesa e começa a acariciá-lo entre as pernas.
+          </line>
+          <choice>
+            <option label="Afaste ela." scene="pushher"></option>
+            <option label="Não faça nada." scene="dontmind"></option>
+            <option label="Abra seu ziper." scene="unzip"></option>
+          </choice>
+          <scene id="pushher">
+            <set asset="game" image="lib40b" duration="0" />
+            <show asset="game" />
+            <line s="t">
+                   Claire volta para o lugar dela.
+            </line>
+            <set asset="game" image="lib39" duration="0" />
+            <show asset="game" />
+            <line s="c">
+                   Acho que estou incomodando você, então com licença...
+            </line>
+            <set asset="game" image="lib13" duration="0" />
+            <show asset="game" />
+            <line s="s">
+                   O que deu nela assim do nada?
+            </line>
+            <line s="you">
+                   Não faço ideia.
+            </line>
+            <set asset="game" image="title" duration="0" />
+            <show asset="game" />  
+            <line s="t">
+                          A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+            </line>
+            <restart />
+          </scene>
+        </scene>
+        <scene id="dontmind">
+          <set asset="game" image="lib40" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                Claire abre seu ziper e agarra seu pênis.
+          </line>
+          <set asset="game" image="lib40c" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                 Ela começa a fazer um boquete em você debaixo da mesa, sem que Sarah perceba.
+          </line>
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
+          <line s="t">
+                           A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+          </line>
+          <restart />
+        </scene>
+        <scene id="unzip">
+          <set asset="game" image="lib40" duration="0" />
+          <show asset="game" />
+          <line s="t">
+              Surpresa, Claire agarra seu pênis.
+          </line>
+          <set asset="game" image="lib40c" duration="0" />
+          <show asset="game" />
+          <line s="t">
+                Ela começa a fazer um boquete em você debaixo da mesa, sem que Sarah perceba.
+          </line>
+          <set asset="game" image="title" duration="0" />
+          <show asset="game" />  
+          <line s="t">
+                           A demo termina aqui. Por favor compre o jogo completo, que contêm mais de 75 diferentes cenas, 15 lindas modelos, e imagens sem censura.
+          </line>
+          <restart />
+        </scene>
+      </scene>
+    </scene>
+  </scenes>
+</ws>
