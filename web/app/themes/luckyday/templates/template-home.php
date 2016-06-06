@@ -72,7 +72,8 @@
 <section class="secure-purchase section-template">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4">
+			<!-- <div class="col-sm-4"> -->
+			<div class="col-sm-6">
 				<div class="block-wrapper">
 					<?php if (pll_current_language() === 'en'): ?>
 						<a href="/buy-it">
@@ -90,7 +91,8 @@
 					
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<!-- <div class="col-sm-4"> -->
+			<div class="col-sm-6">
 				<div class="block-wrapper">
 					<?php if (pll_current_language() === 'en'): ?>
 						<a href="/buy-it">
@@ -107,7 +109,7 @@
 					<?php endif ?>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<!-- <div class="col-sm-4">
 				<div class="block-wrapper">
 					<?php if (pll_current_language() === 'en'): ?>
 						<a href="/buy-it">
@@ -123,7 +125,7 @@
 					</a>
 					<?php endif ?>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<br><br>
 		<div class="row">
