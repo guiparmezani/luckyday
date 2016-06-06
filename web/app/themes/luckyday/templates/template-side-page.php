@@ -138,7 +138,7 @@
 		<section class="buy-it-section section-template generic-full-profile" id="buy-it-section" style="display: none;">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
 						<div class="stripe-section">
 							<div class="image-wrapper">
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/stripe-logo.png'; ?>">
@@ -154,8 +154,9 @@
 								</div>
 							<?php $i++; endwhile; ?>
 						</div>
-					</div>
-					<div class="col-sm-6">
+					</div> -->
+					<!-- <div class="col-sm-6"> -->
+					<div class="col-sm-12">
 						<div class="paypal-section">
 							<div class="image-wrapper">
 								<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
