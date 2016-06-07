@@ -4,6 +4,11 @@
 */
 ?>
 
+<?php 
+	$games = get_field('games', 'options');
+	$game_price = $games[0]['game_price'];
+?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <section class="main-banner" style="background: linear-gradient(-180deg, rgba(255,134,0, .78) 0%, rgba(255,228,64, .78) 100%), url(<?php if (has_post_thumbnail()){ the_post_thumbnail_url('full'); } ?>) center center no-repeat; background-size: cover;">
@@ -78,13 +83,13 @@
 					<?php if (pll_current_language() === 'en'): ?>
 						<a href="/buy-it">
 							<img src="<?php echo bloginfo('template_url') . '/assets/images/coin-icon.svg'; ?>">
-							<span class="block link-label">US$<?php the_field('game_price', 'options'); ?></span>
+							<span class="block link-label">US$<?php echo $game_price; ?></span>
 							<p><?php the_field('price_text'); ?></p>
 						</a>
 					<?php else: ?>
 						<a href="/compre-o-jogo">
 							<img src="<?php echo bloginfo('template_url') . '/assets/images/coin-icon.svg'; ?>">
-							<span class="block link-label">US$<?php the_field('game_price', 'options'); ?></span>
+							<span class="block link-label">US$<?php echo $game_price; ?></span>
 							<p><?php the_field('price_text'); ?></p>
 						</a>
 					<?php endif ?>
