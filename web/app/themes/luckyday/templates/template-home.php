@@ -19,10 +19,10 @@
 				<p><?php the_content(); ?></p>
 				<div class="buttons">
 					<?php if (pll_current_language() === 'en'): ?>
-						<a href="/try-the-demo" class="btn btn-brand white">Try the Demo</a>
+						<a href="<?php the_field('demo_file_en', 'options'); ?>" class="btn btn-brand white" download>Free Demo</a>
 						<a href="/buy-it" class="btn btn-brand white">Buy it Now</a>
 					<?php else: ?>
-						<a href="/teste" class="btn btn-brand white">Free Demo</a>
+						<a href="<?php the_field('demo_file_pt', 'options'); ?>" class="btn btn-brand white" download>Free Demo</a>
 						<a href="/compre-o-jogo" class="btn btn-brand white">Compre Agora</a>
 					<?php endif ?>
 				</div>
