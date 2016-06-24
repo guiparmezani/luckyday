@@ -6,7 +6,7 @@
 
 <?php if(isset($_GET['purchased'])): ?>
 	<?php while(have_rows('games', 'options')): the_row(); ?>
-		<?php if (sanitize_title($_GET['purchased']) === sanitize_title(get_sub_field('game_name'))): ?>
+		<?php if (sanitize_title($_GET['purchased']) === sanitize_title(get_sub_field('game_name')) && isset($_GET['hash']) && validate_download($_GET['hash'])): ?>
 			<?php if(pll_current_language() === 'en') : ?>
 				<iframe width="1" height="1" frameborder="0" src="<?php the_sub_field('game_file'); ?>"></iframe>
 			<?php else: ?>
@@ -165,9 +165,9 @@
 							<?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
 								<div class="paypal-games game-<?php echo $i; ?>">
 									<?php if (pll_current_language() === 'en'): ?>
-										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:' . str_replace(',', '.', get_sub_field('game_price')) . '" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:' . str_replace(',', '.', get_sub_field('game_price')) . '" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true&hash=' . time() . '"]' ); ?>
 									<?php else: ?>
-										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:' . str_replace(',', '.', get_sub_field('game_price')) . '" button_text="Comprar" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/compre-o-jogo?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true"]' ); ?>
+										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:' . str_replace(',', '.', get_sub_field('game_price')) . '" button_text="Comprar" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/compre-o-jogo?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true&hash=' . time() . '"]' ); ?>
 									<?php endif; ?>
 								</div>
 							<?php $i++; endwhile; ?>

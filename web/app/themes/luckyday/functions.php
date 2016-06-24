@@ -16,6 +16,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/payments.php',  // Payment related functions
+  'lib/utils.php',     // Useful functions
   'lib/customizer.php' // Theme customizer
 ];
 
