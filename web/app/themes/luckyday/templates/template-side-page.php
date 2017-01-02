@@ -135,7 +135,7 @@
 	<?php endif; ?>
 
 	<?php if(get_field('show_purchase_forms')): ?>
-		<section class="buy-it-section section-template generic-full-profile" id="buy-it-section" style="display: none;">
+		<section class="buy-it-section section-template generic-full-profile" id="buy-it-section">
 			<div class="container">
 				<div class="row">
 					<!-- <div class="col-sm-6">
@@ -177,14 +177,14 @@
 			</div>
 		</section>
 
-		<section class="donate-section section-template generic-full-profile" id="donate-section">
+		<section class="donate-section section-template generic-full-profile" id="donate-section" style="display: none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="image-wrapper">
 							<img src="<?php echo bloginfo('template_url') . '/assets/images/paypal-logo.png'; ?>">
 						</div>
-						<p><?php if(pll_current_language() === 'en') echo 'This game is under development and will be released soon. You can help funding the development by donating through paypal using the button below.'; else echo 'Esse jogo está sendo desenvolvido e será lançado em breve. Você pode ajudar com os custos de desenvolvimento doando através do Paypal usando o campo abaixo.';?></p>
+						<p><?php if(pll_current_language() === 'en') echo 'Donate using the field below to help funding further editions.'; else echo 'Doe usando o campo abaixo para que mais sequencias continuem sendo produzidas.';?></p>
 						<hr class="divider center">
 						<p class="gray"><?php if(pll_current_language() === 'en') echo 'Enter the amount you would like to donate:'; else echo 'Entre com o valor que você deseja doar:';?></p>
 						<?php if (pll_current_language() === 'en'): ?>
