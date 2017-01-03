@@ -163,7 +163,7 @@
 							</div>
 							<p class="gray"><?php if(pll_current_language() === 'en') echo 'Pay using your PayPal account.'; else echo /*'Pague usando sua conta do PayPal.'*/ 'Pague usando Mercado Pago. Após efetuar o pagamento, envie um e-mail para <a href="mailto:info@luckydaygame.com">info@luckydaygame.com</a> confirmando para receber o link de download.';?></p>
 							<?php $i=0; while(have_rows('games', 'options')): the_row(); ?>
-								<div class="paypal-games game-<?php echo $i; ?>">
+								<div class="paypal-games game-<?php echo $i; ?>" style="<?php if($i > 0){echo 'display: none;';} ?>">
 									<?php if (pll_current_language() === 'en'): ?>
 										<?php echo do_shortcode( '[wp_paypal_payment_box email="' . get_field('paypal_email_address', 'options') . '" options="Game:' . str_replace(',', '.', get_sub_field('game_price')) . '" button_text="Pay Now" new_window="1" return="' . untrailingslashit(get_bloginfo('url')) . '/buy-it?purchased=' . sanitize_title(get_sub_field('game_name')) . '&payment_complete=true&hash=' . time() . '"]' ); ?>
 									<?php else: ?>
